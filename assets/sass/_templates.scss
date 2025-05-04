@@ -1,0 +1,39 @@
+// ============ Общие стили =========== //
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+
+  font-size: 62.5%; //10px
+
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: $black;
+}
+
+main {
+  flex-grow: 1;
+}
+
+// Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
+
+%container {
+  max-width: 1920px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 1.5%;
+}
