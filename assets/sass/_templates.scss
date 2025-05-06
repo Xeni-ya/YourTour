@@ -29,6 +29,15 @@ main {
   flex-grow: 1;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: invert;
+}
+
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
