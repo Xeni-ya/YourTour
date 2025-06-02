@@ -1,6 +1,6 @@
-@import "normalize";
-@import "fonts";
-@import "vars";
-@import "templates";
+@use "vars";
+@use "normalize";
+@use "fonts";
+@use "templates";
 
-@import "components/header"; //по аналогии импортируем свой раздел
+@use "./components/header"; //по аналогии импортируем свой раздел

@@ -38,6 +38,52 @@ a {
   color: invert;
 }
 
+//==================Заголовки====================//
+.page-title {
+  font-weight: 700;
+  font-size: 9.6em;
+
+  // Для перевода в пиксели используем формулу:
+  // line-height (в пикселях) = font-size × (line-height в %) / 100.
+
+  line-height: 105px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: $white;
+
+  @media screen and (max-width: 360px) {
+    font-size: 3.4em;
+    line-height: 38px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 5.9em;
+  // font-size × (line-height в %) / 100 
+  line-height: 73px;
+  text-align: center;
+  color: $black;
+
+  @media screen and (max-width: 360px) {
+    font-size: 3.4em;
+    line-height: 38px;
+  }
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 3.5em;
+  // font-size × (line-height в %) / 100 
+  line-height: 43px;
+  color: $black;
+
+  @media screen and (max-width: 360px) {
+    font-size: 2.3em;
+    line-height: 28px;
+  }
+}
+
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
