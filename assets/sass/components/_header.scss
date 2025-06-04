@@ -1,15 +1,50 @@
-.header {}
+@use "../vars" as *;
 
-.logo {}
+.header {
+  backdrop-filter: blur(54px);
+  background: rgba(243, 239, 232, 0.6);
+  width: 100%;
+  max-width: 1940px;
+  height: 88px;
+}
 
-.container {}
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 28.88px 20px;
 
-.navbar {}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.navbar__items {}
+}
 
-.navbar__item {}
+// .logo {}
 
-.navbar__link {}
+// .navbar {}
 
-.phone {}
+.navbar__items {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar__item {
+  text-decoration-thickness: 2px;
+  /* Толщина подчеркивания */
+  text-decoration-skip-blocks: auto;
+  /* Оставляем отступ */
+  text-underline-offset: 4px;
+  /* Отступ */
+}
+
+.navbar__item:hover {
+  text-decoration: underline;
+}
+
+.navbar__link {
+  color: $black;
+}
+
+.phone {
+  color: $black;
+}
