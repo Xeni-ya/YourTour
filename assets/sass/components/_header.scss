@@ -4,47 +4,46 @@
   backdrop-filter: blur(54px);
   background: rgba(243, 239, 232, 0.6);
   width: 100%;
-  max-width: 1940px;
+  max-width: 1920px;
   height: 88px;
-}
 
-.container {
-  max-width: 1168px;
-  margin: 0 auto;
-  padding: 28.88px 20px;
+  .container {
+    max-width: 1184px; //1168px
+    margin: 0 auto;
+    padding: 28.88px 16px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-}
+    .logo>img {
+      padding-left: 0px;
+    }
 
-// .logo {}
+    .navbar {
+      padding-bottom: 6px;
+      padding-left: 10px;
 
-// .navbar {}
+      .navbar__items {
+        display: flex;
+        gap: 50px;
 
-.navbar__items {
-  display: flex;
-  gap: 50px;
-}
+        .navbar__item {
+          text-decoration-thickness: 2px;
 
-.navbar__item {
-  text-decoration-thickness: 2px;
-  /* Толщина подчеркивания */
-  text-decoration-skip-blocks: auto;
-  /* Оставляем отступ */
-  text-underline-offset: 4px;
-  /* Отступ */
-}
+          .navbar__item:hover {
+            text-decoration: underline;
+          }
+        }
 
-.navbar__item:hover {
-  text-decoration: underline;
-}
+        .navbar__link {
+          color: $black;
+        }
+      }
 
-.navbar__link {
-  color: $black;
-}
-
-.phone {
-  color: $black;
+      .phone {
+        color: $black;
+      }
+    }
+  }
 }
