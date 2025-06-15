@@ -1,12 +1,12 @@
 @use "../vars" as *;
 
 .section-hero {
-  background-image: url('../../imgs/header-img.png');
+  background-image: url('../../assets/imgs/header-img.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  // padding-top: 88px;
+  height: 87vh;
+  margin-top: -88px;
   display: flex;
   justify-content: center;
   align-items: center;
