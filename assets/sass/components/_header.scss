@@ -1,17 +1,18 @@
 @use "../vars" as *;
 
 .header {
-  backdrop-filter: blur(54px);
-  background: rgba(243, 239, 232, 0.6);
   width: 100%;
   max-width: 1920px;
   height: 88px;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  color: $white;
 
   .container {
-    max-width: 1184px; //1168px
+    max-width: 1184px;
     margin: 0 auto;
     padding: 28.88px 16px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,22 +28,15 @@
       .navbar__items {
         display: flex;
         gap: 50px;
-
-        .navbar__item {
-          text-decoration-thickness: 2px;
-
-          .navbar__item:hover {
-            text-decoration: underline;
-          }
-        }
-
-        .navbar__link {
-          color: $black;
-        }
       }
 
-      .phone {
-        color: $black;
+      .navbar__link {
+        color: $white;
+
+        .navbar__link:hover {
+          text-decoration: underline;
+          text-decoration-color: $white;
+        }
       }
     }
   }
