@@ -5,12 +5,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
   height: 87vh;
   margin-top: -88px;
+  color: $white;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $white;
 
   .section-hero__container {
     width: 100%;
@@ -24,6 +26,8 @@
     text-align: center;
 
     .section-hero__title {
+      width: 100%;
+      max-width: 768px;
       margin: 0;
     }
 
@@ -31,8 +35,11 @@
       width: 100%;
       max-width: 562px;
       margin-top: 50px;
-    }
 
+      @media screen and (max-width: 360px) {
+        font-size: 1rem; // 16px
+      }
+    }
 
     .section-hero__button {
       border-radius: 10px;
@@ -43,7 +50,7 @@
       background: $white;
 
       font-weight: 400;
-      font-size: 1.0625rem;
+      font-size: 1.0625rem; // 17px
       line-height: 1.42;
       letter-spacing: -0.01em;
       color: $black;
@@ -52,6 +59,10 @@
       border: none;
       cursor: pointer;
       transition: all 0.3s ease;
+
+      @media screen and (max-width: 360px) {
+        font-size: 1rem; // 16px
+      }
     }
   }
 }
