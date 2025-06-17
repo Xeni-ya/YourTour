@@ -6,8 +6,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  height: 87vh;
   margin-top: -88px;
+  padding: 207px 0 119px 0;
   color: $white;
 
   display: flex;
@@ -17,8 +17,6 @@
   .section-hero__container {
     width: 100%;
     max-width: 768px;
-    height: 505px;
-    margin-top: 119px;
 
     display: flex;
     flex-direction: column;
@@ -26,9 +24,8 @@
     text-align: center;
 
     .section-hero__title {
-      width: 100%;
-      max-width: 768px;
       margin: 0;
+      width: 100%;
     }
 
     .section-hero__text {
