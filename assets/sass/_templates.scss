@@ -83,8 +83,8 @@ a {
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
-  max-width: 1920px;
-  min-width: 360px;
+  max-width: 1186px; // 1170px
+  min-width: 334px; // 318px
   margin: 0 auto;
-  padding: 0 1.5%;
+  padding: 0 16px;
 }
