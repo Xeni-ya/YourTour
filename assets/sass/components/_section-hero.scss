@@ -1,4 +1,5 @@
 @use "../vars" as *;
+@use "../templates";
 
 .section-hero {
   background-image: url('../../assets/imgs/header-img.png');
@@ -14,51 +15,55 @@
   justify-content: center;
   align-items: center;
 
-  .section-hero__container {
-    width: 100%;
-    max-width: 768px;
+  .section-hero__wrap {
+    @extend %container;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    .section-hero__title {
-      margin: 0;
+    .section-hero__inner {
       width: 100%;
-    }
+      max-width: 768px;
 
-    .section-hero__text {
-      width: 100%;
-      max-width: 562px;
-      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
 
-      @media screen and (max-width: 360px) {
-        font-size: 1rem; // 16px
+      .section-hero__title {
+        margin: 0;
+        width: 100%;
       }
-    }
 
-    .section-hero__button {
-      border-radius: 10px;
-      padding: 5px 20px;
-      width: 118px;
-      height: 34px;
+      .section-hero__text {
+        width: 100%;
+        max-width: 562px;
+        margin-top: 50px;
 
-      background: $white;
+        @media screen and (max-width: 360px) {
+          font-size: 1rem; // 16px
+        }
+      }
 
-      font-weight: 400;
-      font-size: 1.0625rem; // 17px
-      line-height: 1.42;
-      letter-spacing: -0.01em;
-      color: $black;
+      .section-hero__button {
+        border-radius: 10px;
+        padding: 5px 20px;
+        width: 118px;
+        height: 34px;
 
-      margin-top: 50px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
+        background: $white;
 
-      @media screen and (max-width: 360px) {
-        font-size: 1rem; // 16px
+        font-weight: 400;
+        font-size: 1.0625rem; // 17px
+        line-height: 1.42;
+        letter-spacing: -0.01em;
+        color: $black;
+
+        margin-top: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @media screen and (max-width: 360px) {
+          font-size: 1rem; // 16px
+        }
       }
     }
   }
