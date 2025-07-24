@@ -10,7 +10,7 @@
   color: $white;
 
   .container {
-    max-width: 1184px; // 1168px
+    max-width: 1215px; // 1168px
     margin: 0 auto;
     padding: 28.88px 16px;
     display: flex;
@@ -22,7 +22,7 @@
     }
 
     .logo>img {
-      padding-left: 0px;
+      padding-left: 15px;
 
       @media screen and (max-width: 360px) {
         width: 132px;
@@ -33,7 +33,7 @@
 
     .navbar {
       padding-bottom: 6px;
-      padding-left: 10px;
+      padding-right: 7px;
 
       @media screen and (max-width: 360px) {
         display: none;
@@ -52,9 +52,31 @@
           text-decoration-color: $white;
         }
       }
+
+      .navbar__link-tours {
+        padding-left: 8px;
+        letter-spacing: 0.005em;
+      }
+
+      .navbar__link-create {
+        padding-left: 4px;
+        letter-spacing: -0.005em;
+      }
+
+      .navbar__link-reviews {
+        padding-left: 2px;
+        letter-spacing: 0.005em;
+      }
+
+      .navbar__link-stories {
+        padding-left: 2px;
+        letter-spacing: 0.01em;
+      }
     }
 
     .phone {
+      padding-bottom: 9px;
+
       @media screen and (max-width: 360px) {
         font-size: 1rem;
         margin-right: -15px;
