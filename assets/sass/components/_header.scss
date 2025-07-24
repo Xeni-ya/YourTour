@@ -28,10 +28,16 @@
     .logo>img {
       padding-left: 15px;
 
+      @media screen and (max-width: 1024px) {
+        width: 181.84px;
+        height: 30.24px;
+      }
+
       @media screen and (max-width: 360px) {
-        width: 132px;
-        height: 22px;
+        width: 137px; // 133px
+        height: 23px; // 22px
         margin: -1px -2px;
+        padding-left: 0px;
       }
     }
 
@@ -92,7 +98,7 @@
       @media screen and (max-width: 360px) {
         font-size: 1rem;
         margin-right: -15px;
-        margin-top: -2px;
+        margin-top: 0px;
       }
     }
   }
