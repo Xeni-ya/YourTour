@@ -35,9 +35,12 @@
       .section-hero__title {
         margin: 0;
         width: 100%;
+        position: relative;
+        left: 10px;
 
         @media screen and (max-width: 360px) {
-          padding-left: 9px;
+          position: relative;
+          left: 9px;
         }
       }
 
@@ -45,16 +48,19 @@
         width: 100%;
         max-width: 562px;
         margin-top: 50px;
+        letter-spacing: 0.01em;
+        position: relative;
+        left: 5px;
 
         @media screen and (max-width: 1024px) {
           max-width: 410px;
-          padding-left: 13px;
+          left: 7px;
         }
 
         @media screen and (max-width: 360px) {
           font-size: 1rem; // 16px
           margin-top: 40px;
-          padding-left: 9px;
+          left: 9px;
         }
       }
 

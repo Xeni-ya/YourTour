@@ -49,6 +49,10 @@ a {
   text-align: center;
   color: $white;
 
+  @media screen and (max-width: 1024px) {
+    letter-spacing: 0.01em;
+  }
+
   @media screen and (max-width: 360px) {
     font-size: 2.125rem; // 34px
     line-height: 1.12;
