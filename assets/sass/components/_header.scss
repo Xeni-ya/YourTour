@@ -29,8 +29,8 @@
       padding-left: 15px;
 
       @media screen and (max-width: 1024px) {
-        width: 181.84px;
-        height: 30.24px;
+        width: 197px;
+        height: 32px;
       }
 
       @media screen and (max-width: 360px) {
@@ -47,6 +47,7 @@
 
       @media screen and (max-width: 1024px) {
         max-width: 428px; // 408px
+        padding-right: 0px;
       }
 
       @media screen and (max-width: 360px) {
@@ -74,11 +75,19 @@
       .navbar__link-tours {
         padding-left: 8px;
         letter-spacing: 0.005em;
+
+        @media screen and (max-width: 1024px) {
+          padding-left: 0px;
+        }
       }
 
       .navbar__link-create {
         padding-left: 4px;
         letter-spacing: -0.005em;
+
+        @media screen and (max-width: 1024px) {
+          padding-left: 0px;
+        }
       }
 
       .navbar__link-reviews {
