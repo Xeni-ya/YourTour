@@ -15,9 +15,11 @@
   <!-- Шапка сайта -->
   <header class="header">
     <div class="container">
+
       <a href="/" class="logo">
         <img src="./assets/icons/logo-white.svg" alt="логотип" />
       </a>
+
       <nav class="navbar">
         <ul class="navbar__items">
           <li class="navbar__item">
@@ -34,9 +36,12 @@
           </li>
         </ul>
       </nav>
+
       <a href="tel:+79999999999" class="phone">+7 999 999 99 99</a>
+
     </div>
   </header>
+
   <!-- Основное контент -->
   <main>
     <!-- Герой-секция -->
@@ -54,8 +59,125 @@
         </div>
       </div>
     </section>
+
     <!-- Категории туров -->
-    <section class="section-categories"></section>
+    <section class="section-categories">
+      <div class="container">
+        <h2 class="section-categories__title">Выбери свой тур</h2>
+
+        <div class="tabs">
+          <nav class="nav-tabs">
+            <ul class="nav-tabs__items">
+              <li class="nav-tabs__item">
+                <a href="#tab_01" class="">Популярные</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a href="#tab_02" class="">Авторские</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a href="#tab_03" class="">Походы</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a href="#tab_04" class="">Истории</a>
+              </li>
+              <li class="nav-tabs__item">
+                <a href="#tab_04" class="">Истории</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tabs__body">
+
+            <div class="tabs__block" id="tab_01">
+              <div class="card">
+                <h3 class="subtitle">Путешествие в горы</h3>
+                <span class="card__cost">от 80 000 руб</span>
+                <a href="#" class="card__link">
+                  <span class="card__link-label">Подробнее</span>
+                  <span class="card__link-icon">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="tabs__block" id="tab_02">
+              <div class="card">
+                <h3 class="subtitle">Путешествие в горы</h3>
+                <span class="card__cost">от 80 000 руб</span>
+                <a href="#" class="card__link">
+                  <span class="card__link-label">Подробнее</span>
+                  <span class="card__link-icon">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="tabs__block" id="tab_03">
+              <div class="card">
+                <h3 class="subtitle">Путешествие в горы</h3>
+                <span class="card__cost">от 80 000 руб</span>
+                <a href="#" class="card__link">
+                  <span class="card__link-label">Подробнее</span>
+                  <span class="card__link-icon">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="tabs__block" id="tab_04">
+              <div class="card">
+                <h3 class="subtitle">Путешествие в горы</h3>
+                <span class="card__cost">от 80 000 руб</span>
+                <a href="#" class="card__link">
+                  <span class="card__link-label">Подробнее</span>
+                  <span class="card__link-icon">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="tabs__block" id="tab_05">
+              <div class="card">
+                <h3 class="subtitle">Путешествие в горы</h3>
+                <span class="card__cost">от 80 000 руб</span>
+                <a href="#" class="card__link">
+                  <span class="card__link-label">Подробнее</span>
+                  <span class="card__link-icon">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.7004 7.28331L15.1535 0.796818C14.7541 0.401061 14.1063 0.401061 13.7068 0.796818C13.3073 1.19266 13.3073 1.83433 13.7068 2.23017L18.5074 6.98647H1.02294C0.458032 6.98647 0 7.44029 0 7.99999C0 8.55961 0.458032 9.0135 1.02294 9.0135H18.5074L13.707 13.7698C13.3075 14.1656 13.3075 14.8073 13.707 15.2032C13.9067 15.4009 14.1686 15.5 14.4304 15.5C14.6921 15.5 14.9539 15.4009 15.1537 15.2032L21.7004 8.71667C22.0999 8.32083 22.0999 7.67915 21.7004 7.28331Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
     <!-- Форма создания тура -->
     <section class="section-form"></section>
     <!-- О компании -->
