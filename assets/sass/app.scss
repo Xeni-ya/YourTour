@@ -1,7 +1,7 @@
-@use "templates";
-@use "vars" as *;
 @use "normalize";
 @use "fonts";
+@use "vars" as *;
+@use "templates";
 
 @use "./components/header"; //по аналогии импортируем свой раздел
 @use "./components/section-hero";
