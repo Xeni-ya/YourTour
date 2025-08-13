@@ -10,6 +10,9 @@
 
     .section-categories__title {
       color: $black;
+      position: relative;
+      left: 8px;
+      bottom: 2px;
     }
 
     .tabs {
@@ -23,6 +26,8 @@
         .nav-tabs__items {
           display: flex;
           gap: 30px;
+          position: relative;
+          left: 8px;
 
           .nav-tabs__item {
             font-weight: 700;
@@ -34,7 +39,7 @@
               color: $orange-200;
               text-decoration: underline; //обычное подчёркивание
               text-decoration-thickness: 2px; // задаёт толщину линии
-              text-underline-offset: 6px; // смещаем подчёркивание вниз 
+              text-underline-offset: 10px; // смещаем подчёркивание вниз 
             }
           }
         }
@@ -47,7 +52,10 @@
         .tabs__block {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
+          justify-content: space-around;
+
+          position: relative;
+          top: 5px;
 
           .tabs__block:target {
             display: block;
@@ -164,28 +172,58 @@
         }
       }
 
-      #card-one::before {
-        background-image: url('../../../assets/imgs/card-tour-photo-1.png');
+      #card-one {
+        position: relative;
+        right: 7px;
+
+        &::before {
+          background-image: url('../../../assets/imgs/card-tour-photo-2.png');
+        }
       }
 
-      #card-two::before {
-        background-image: url('../../../assets/imgs/card-tour-photo-2.png');
+      #card-two {
+        position: relative;
+        left: 8px;
+
+        &::before {
+          background-image: url('../../../assets/imgs/card-tour-photo-2.png');
+        }
       }
 
-      #card-three::before {
-        background-image: url('../../../assets/imgs/card-tour-photo-3.png');
+      #card-three {
+        position: relative;
+        left: 21px;
+
+        &::before {
+          background-image: url('../../../assets/imgs/card-tour-photo-3.png');
+        }
       }
 
-      #card-four::before {
-        background-image: url('../../../assets/imgs/card-tour-photo-4.png');
+      #card-four {
+        position: relative;
+        right: 7px;
+
+        &::before {
+          background-image: url('../../../assets/imgs/card-tour-photo-4.png');
+        }
       }
 
-      #card-five::before {
-        background-image: url('../../../assets/imgs/card-tour-photo-5.png');
+      #card-five {
+        position: relative;
+        left: 8px;
+
+        &::before {
+          background-image: url('../../../assets/imgs/card-tour-photo-5.png');
+        }
       }
 
-      #card-six::before {
-        background-image: url('../../../assets/imgs/card-tour-photo-6.png');
+      #card-six {
+        position: relative;
+        left: 21px;
+
+        &::before {
+          background-image: url('../../../assets/imgs/card-tour-photo-6.png');
+        }
       }
     }
   }
