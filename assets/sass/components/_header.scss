@@ -25,14 +25,18 @@
       padding: 32.5px 20px;
     }
 
-    .logo>img {
+    .logo>svg {
       position: relative;
       left: 15px;
 
+      width: 100%;
+      max-width: 182px;
+      height: 32px;
+
       @media screen and (max-width: 1024px) {
-        width: 197px;
+        max-width: 182px;
         height: 32px;
-        left: 7px;
+        left: 15px;
       }
 
       @media screen and (max-width: 360px) {
@@ -74,38 +78,22 @@
 
       .navbar__link-tours {
         position: relative;
-        left: 5px;
-
-        @media screen and (max-width: 1024px) {
-          left: -4px;
-        }
+        left: 7px;
       }
 
       .navbar__link-create {
         position: relative;
-        left: 6px;
-
-        @media screen and (max-width: 1024px) {
-          left: -2px;
-        }
+        left: 7px;
       }
 
       .navbar__link-reviews {
         position: relative;
         left: 8px;
-
-        @media screen and (max-width: 1024px) {
-          left: -1px;
-        }
       }
 
       .navbar__link-stories {
         position: relative;
-        left: 10px;
-
-        @media screen and (max-width: 1024px) {
-          left: 3px;
-        }
+        left: 8px;
       }
     }
 
