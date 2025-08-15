@@ -12,7 +12,6 @@
       color: $black;
       position: relative;
       left: 8px;
-      bottom: 2px;
     }
 
     .tabs {
@@ -41,6 +40,29 @@
               text-decoration-thickness: 2px; // задаёт толщину линии
               text-underline-offset: 10px; // смещаем подчёркивание вниз 
             }
+
+            .nav-tabs__link {
+              position: relative;
+              right: 2px;
+
+              &[href="#tab_03"] {
+                @media screen and (max-width: 1024px) {
+                  right: 1px;
+                }
+              }
+
+              &[href="#tab_04"] {
+                @media screen and (max-width: 1024px) {
+                  right: 0;
+                }
+              }
+
+              &[href="#tab_05"] {
+                @media screen and (max-width: 1024px) {
+                  left: 0;
+                }
+              }
+            }
           }
         }
       }
@@ -56,6 +78,11 @@
 
           position: relative;
           top: 5px;
+
+          @media screen and (max-width: 1024px) {
+            top: 7px;
+            justify-content: space-evenly;
+          }
 
           .tabs__block:target {
             display: block;
@@ -75,6 +102,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media screen and (max-width: 1024px) {
+              max-width: 450px;
+              position: relative;
+              left: 11px;
+            }
 
             // фон с картинкой и анимация
             &::before {
@@ -173,54 +206,36 @@
       }
 
       #card-one {
-        position: relative;
-        right: 7px;
-
         &::before {
-          background-image: url('../../../assets/imgs/card-tour-photo-2.png');
+          background-image: url('../../../assets/imgs/card-tour-photo-1.png');
         }
       }
 
       #card-two {
-        position: relative;
-        left: 8px;
-
-        &::before {
+        &#card-two::before {
           background-image: url('../../../assets/imgs/card-tour-photo-2.png');
         }
       }
 
       #card-three {
-        position: relative;
-        left: 21px;
-
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-3.png');
         }
       }
 
       #card-four {
-        position: relative;
-        right: 7px;
-
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-4.png');
         }
       }
 
       #card-five {
-        position: relative;
-        left: 8px;
-
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-5.png');
         }
       }
 
       #card-six {
-        position: relative;
-        left: 21px;
-
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-6.png');
         }
