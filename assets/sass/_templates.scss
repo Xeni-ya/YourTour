@@ -65,6 +65,7 @@ a {
   @media screen and (max-width: 360px) {
     font-size: 2.125rem; // 34px
     line-height: 1.12;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -77,6 +78,7 @@ a {
   @media screen and (max-width: 360px) {
     font-size: 1.4375rem; // 23px
     line-height: 1.20;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -84,7 +86,7 @@ a {
 
 %container {
   max-width: 1190px; // 1170px
-  min-width: 334px; // 318px
+  min-width: 338px; // 318px
   margin: 0 auto;
   padding: 0 16px;
 }
