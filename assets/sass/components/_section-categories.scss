@@ -8,6 +8,10 @@
     @extend %container;
     margin-top: 135px;
 
+    @media screen and (max-width: 360px) {
+      margin-top: 75px;
+    }
+
     .section-categories__title {
       color: $black;
       position: relative;
@@ -28,11 +32,23 @@
           position: relative;
           left: 8px;
 
+          @media screen and (max-width: 360px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            bottom: 5px;
+          }
+
           .nav-tabs__item {
             font-weight: 700;
             font-size: 1.4375rem; // 23px;
             line-height: 1.22;
             color: $black;
+
+            @media screen and (max-width: 360px) {
+              font-size: 1rem; // 16px;
+              line-height: 1.42;
+            }
 
             &.nav-tabs__item_active {
               color: $orange-200;
@@ -43,17 +59,31 @@
 
             .nav-tabs__link {
               position: relative;
-              right: 2px;
+              right: 1px;
+
+              &[href="#tab_02"] {
+                @media screen and (max-width: 360px) {
+                  right: 0px;
+                }
+              }
 
               &[href="#tab_03"] {
                 @media screen and (max-width: 1024px) {
                   right: 1px;
+                }
+
+                @media screen and (max-width: 360px) {
+                  right: 0px;
                 }
               }
 
               &[href="#tab_04"] {
                 @media screen and (max-width: 1024px) {
                   right: 0;
+                }
+
+                @media screen and (max-width: 360px) {
+                  right: 1px;
                 }
               }
 
@@ -107,6 +137,15 @@
               max-width: 450px;
               position: relative;
               left: 11px;
+            }
+
+            @media screen and (max-width: 360px) {
+              border-radius: 20px;
+              max-width: 318px;
+              height: 318px;
+              left: 7px;
+              bottom: 63px;
+              padding: 25px;
             }
 
             // фон с картинкой и анимация
@@ -167,6 +206,10 @@
                 font-size: 1.0625rem; // 17px;
                 line-height: 1.42;
                 letter-spacing: -0.01em;
+
+                @media screen and (max-width: 360px) {
+                  font-size: 1rem; // 16px;
+                }
               }
             }
 
@@ -184,11 +227,22 @@
                 background: $green-400;
               }
 
+              @media screen and (max-width: 360px) {
+                pointer-events: none; //отключить реакцию на наведение
+              }
+
               .card__link-label {
                 font-weight: 700;
                 font-size: 1.4375rem; // 23px;
-                line-height: 122%;
+                line-height: 1.22;
+
+                @media screen and (max-width: 360px) {
+                  font-size: 1rem; // 16px;
+                  font-size: 16px;
+                  line-height: 1.42;
+                }
               }
+
 
               .card__link-icon {
                 display: flex;
@@ -198,6 +252,11 @@
                 .icon {
                   width: 24px;
                   height: 26px;
+
+                  @media screen and (max-width: 360px) {
+                    width: 22px;
+                    height: 16px;
+                  }
                 }
               }
             }
@@ -206,38 +265,105 @@
       }
 
       #card-one {
+        position: relative;
+        right: 7px;
+
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-1.png');
         }
       }
 
       #card-two {
+        position: relative;
+        left: 8px;
+
         &#card-two::before {
           background-image: url('../../../assets/imgs/card-tour-photo-2.png');
+        }
+
+        @media screen and (max-width: 1024px) {
+          left: 4px;
+        }
+
+        @media screen and (max-width: 360px) {
+          left: 7px;
+          bottom: 74px;
         }
       }
 
       #card-three {
+        position: relative;
+        left: 21px;
+
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-3.png');
+        }
+
+        @media screen and (max-width: 1024px) {
+          left: 11px;
+          bottom: 13px;
+        }
+
+        @media screen and (max-width: 360px) {
+          left: 7px;
+          bottom: 86px;
         }
       }
 
       #card-four {
+        position: relative;
+        right: 7px;
+
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-4.png');
+        }
+
+        @media screen and (max-width: 1024px) {
+          left: 4px;
+          bottom: 13px;
+        }
+
+        @media screen and (max-width: 360px) {
+          left: 7px;
+          bottom: 98px;
         }
       }
 
       #card-five {
+        position: relative;
+        left: 8px;
+
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-5.png');
+        }
+
+        @media screen and (max-width: 1024px) {
+          left: 11px;
+          bottom: 25px;
+        }
+
+        @media screen and (max-width: 360px) {
+          left: 7px;
+          bottom: 110px;
         }
       }
 
       #card-six {
+        position: relative;
+        left: 21px;
+
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-6.png');
+        }
+
+        @media screen and (max-width: 1024px) {
+          left: 4px;
+          bottom: 25px;
+        }
+
+        @media screen and (max-width: 360px) {
+          left: 7px;
+          bottom: 122px;
         }
       }
     }
