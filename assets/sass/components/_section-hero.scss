@@ -57,6 +57,19 @@
           left: 7px;
         }
 
+        @media screen and (max-width: 860px) {
+          font-size: 1.125rem; //18px
+        }
+
+        @media screen and (max-width: 765px) {
+          font-size: 1.0625rem; //17px
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 1rem; // 16px
+          margin-top: 45px;
+        }
+
         @media screen and (max-width: 360px) {
           font-size: 1rem; // 16px
           margin-top: 40px;
