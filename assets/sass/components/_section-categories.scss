@@ -16,6 +16,22 @@
       color: $black;
       position: relative;
       left: 8px;
+
+      @media screen and (max-width: 520px) {
+        font-size: 3rem; // 48px
+      }
+
+      @media screen and (max-width: 432px) {
+        font-size: 2.5rem; // 40px
+      }
+
+      @media screen and (max-width: 380px) {
+        font-size: 2.375rem; // 38px
+      }
+
+      @media screen and (max-width: 363px) {
+        font-size: 2.25rem; // 36px
+      }
     }
 
     .tabs {
@@ -32,11 +48,35 @@
           position: relative;
           left: 8px;
 
-          @media screen and (max-width: 360px) {
+          font-weight: 700;
+          font-size: 1.4375rem; // 23px;
+          line-height: 1.22;
+
+          @media screen and (max-width: 762px) {
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
+          }
+
+          @media screen and (max-width: 432px) {
+            gap: 15px;
+          }
+
+          @media screen and (max-width: 425px) {
+            font-size: 1.125rem;
+
             gap: 10px;
+          }
+
+          @media screen and (max-width: 375px) {
+            font-size: 1rem; // 16px;
+          }
+
+          @media screen and (max-width: 360px) {
             bottom: 4px;
+
+            font-size: 1rem; // 16px;
+            line-height: 1.42;
           }
 
           .nav-tabs__item {
@@ -104,20 +144,24 @@
         .tabs__block {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-around;
+          justify-content: space-evenly;
 
           position: relative;
           top: 5px;
 
           @media screen and (max-width: 1024px) {
             top: 7px;
-            justify-content: space-evenly;
           }
 
           @media screen and (max-width: 1004px) {
             flex-direction: column;
             align-content: center;
           }
+
+          @media screen and (max-width: 520px) {
+            flex-wrap: nowrap;
+          }
+
 
           .tabs__block:target {
             display: block;
@@ -148,7 +192,9 @@
               left: 11px;
             }
 
-            @media screen and (max-width: 360px) {
+            @media screen and (max-width: 375px) {}
+
+            @media screen and (max-width: 375px) {
               border-radius: 20px;
               max-width: 318px;
               height: 318px;
@@ -216,7 +262,7 @@
                 line-height: 1.42;
                 letter-spacing: -0.01em;
 
-                @media screen and (max-width: 360px) {
+                @media screen and (max-width: 375px) {
                   font-size: 1rem; // 16px;
 
                   position: relative;
@@ -244,7 +290,7 @@
                 bottom: 1px;
               }
 
-              @media screen and (max-width: 360px) {
+              @media screen and (max-width: 375px) {
                 pointer-events: none; //отключить реакцию на наведение
                 right: 2px;
                 top: 1px;
@@ -255,7 +301,7 @@
                 font-size: 1.4375rem; // 23px;
                 line-height: 1.22;
 
-                @media screen and (max-width: 360px) {
+                @media screen and (max-width: 375px) {
                   font-size: 1rem; // 16px;
                   font-size: 16px;
                   line-height: 1.42;
@@ -277,7 +323,7 @@
                     top: 1px;
                   }
 
-                  @media screen and (max-width: 360px) {
+                  @media screen and (max-width: 375px) {
                     width: 22px;
                     height: 16px;
 
