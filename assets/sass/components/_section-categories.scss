@@ -32,6 +32,10 @@
       @media screen and (max-width: 363px) {
         font-size: 2.25rem; // 36px
       }
+
+      @media screen and (max-width: 320px) {
+        font-size: 2.125rem; // 34px
+      }
     }
 
     .tabs {
@@ -162,7 +166,6 @@
             flex-wrap: nowrap;
           }
 
-
           .tabs__block:target {
             display: block;
           }
@@ -191,8 +194,6 @@
               position: relative;
               left: 11px;
             }
-
-            @media screen and (max-width: 375px) {}
 
             @media screen and (max-width: 375px) {
               border-radius: 20px;
@@ -344,6 +345,10 @@
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-1.png');
         }
+
+        @media screen and (max-width: 1156px) {
+          right: 0px;
+        }
       }
 
       #card-two {
@@ -352,6 +357,10 @@
 
         &#card-two::before {
           background-image: url('../../../assets/imgs/card-tour-photo-2.png');
+        }
+
+        @media screen and (max-width: 1156px) {
+          left: 0px;
         }
 
         @media screen and (max-width: 1024px) {
@@ -370,6 +379,10 @@
 
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-3.png');
+        }
+
+        @media screen and (max-width: 1156px) {
+          left: 0;
         }
 
         @media screen and (max-width: 1024px) {
@@ -391,6 +404,10 @@
           background-image: url('../../../assets/imgs/card-tour-photo-4.png');
         }
 
+        @media screen and (max-width: 1156px) {
+          left: 0;
+        }
+
         @media screen and (max-width: 1024px) {
           left: 4px;
           bottom: 13px;
@@ -410,6 +427,10 @@
           background-image: url('../../../assets/imgs/card-tour-photo-5.png');
         }
 
+        @media screen and (max-width: 1156px) {
+          left: 0;
+        }
+
         @media screen and (max-width: 1024px) {
           left: 11px;
           bottom: 25px;
@@ -427,6 +448,10 @@
 
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-6.png');
+        }
+
+        @media screen and (max-width: 1156px) {
+          left: 0;
         }
 
         @media screen and (max-width: 1024px) {
