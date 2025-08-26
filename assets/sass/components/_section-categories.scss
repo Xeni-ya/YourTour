@@ -360,7 +360,7 @@
         position: relative;
         left: 8px;
 
-        &#card-two::before {
+        &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-2.png');
         }
 
