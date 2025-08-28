@@ -2,8 +2,6 @@
 @use "../templates";
 
 .section-categories {
-  background-color: $white;
-
   .container {
     @extend %container;
     margin-top: 135px;
