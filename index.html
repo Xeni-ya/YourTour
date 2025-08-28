@@ -200,51 +200,61 @@
         <p class="section-form__text">
           Идейные соображения высшего порядка, а также рамки и место обучения кадров
         </p>
-        <form class="section-form__form" action="#" method="post">
+        <form class="section-form__form" action="#" method="post" name="form">
           <div>
             <label for="name" accesskey="W" tabindex="0">Имя</label><br />
-            <input type="text" placeholder="Введите Ваше имя" id="name" accesskey="W" tabindex="1" />
+            <input type="text" placeholder="Введите Ваше имя" title="Только буквы, без цифр и пробелов" name="name"
+              id="name" accesskey="W" tabindex="1" minlength="2" maxlength="50" required
+              pattern="^[a-zA-Zа-яА-ЯёЁ]+(?: [a-zA-Zа-яА-ЯёЁ]+)*$" />
           </div>
           <div>
-            <label for="city-select" accesskey="W" tabindex="2">Направление</label><br />
-            <select name="city" id="city-select" accesskey="W" tabindex="3">
-              <option value="" accesskey="W" tabindex="4">Куда хотите ехать</option>
-              <option value="petersburg" accesskey="W" tabindex="5">Санкт-Петербург</option>
-              <option value="samara" accesskey="W" tabindex="6">Самара</option>
-              <option value="perm" accesskey="W" tabindex="7">Пермь</option>
-              <option value="novosibirsk" accesskey="W" tabindex="8">Новосибирск</option>
+            <label for="city-select" accesskey="D" tabindex="2">Направление</label><br />
+            <select name="city" id="city-select" accesskey="D" tabindex="3" required>
+              <option value="" accesskey="D" tabindex="4">Куда хотите ехать</option>
+              <option value="petersburg" accesskey="D" tabindex="5">Санкт-Петербург</option>
+              <option value="samara" accesskey="D" tabindex="6">Самара</option>
+              <option value="perm" accesskey="D" tabindex="7">Пермь</option>
+              <option value="novosibirsk" accesskey="D" tabindex="8">Новосибирск</option>
             </select>
           </div>
           <div>
-            <label for="userEmail" accesskey="W" tabindex="9">Email</label><br />
-            <input type="email" placeholder="example@mail.com" id="userEmail" accesskey="W" tabindex="10" />
+            <label for="userEmail" accesskey="S" tabindex="9">Email</label><br />
+            <input type="email" placeholder="example@mail.com" title="example@mail.com" name="email" id="userEmail"
+              accesskey="S" tabindex="10" required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ или ^[\w.-]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,}$" />
           </div>
           <div>
-            <label for="tel" accesskey="W" tabindex="11">Телефон</label><br />
-            <input type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" id="tel" accesskey="W" tabindex="12" />
+            <label for="tel" accesskey="A" tabindex="11">Телефон</label><br />
+            <input type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" title="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+              name="phone" id="tel" accesskey="A" tabindex="12" required
+              pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" />
           </div>
           <div>
-            <label for="start" accesskey="W" tabindex="13">Дата от</label><br />
-            <input type="date" name="trip-start" min="2025-01-01" max="2026-12-31" id="start" accesskey="W"
-              tabindex="14" />
+            <label for="start" accesskey="T" tabindex="13">Дата от</label><br />
+            <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-start"
+              id="start" accesskey="T" tabindex="14" required
+              pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)" />
           </div>
           <div>
-            <label for="end" accesskey="W" tabindex="15">Дата до</label><br />
-            <input type="date" name="trip-end" min="2025-01-01" max="2026-12-31" id="end" accesskey="W" tabindex="16" />
+            <label for="end" accesskey="H" tabindex="15">Дата до</label><br />
+            <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-end"
+              id="end" accesskey="H" tabindex="16" required
+              pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)" />
           </div>
           <div>
-            <label for="comment" accesskey="W" tabindex="17">Комментарий</label><br />
-            <textarea name="comment" cols="40" rows="3" accesskey="W" tabindex="18"></textarea>
+            <label for="comment" accesskey="G" tabindex="17">Комментарий</label><br />
+            <textarea cols="40" rows="3" name="textArea" id="comment" minlength="5" maxlength="140" accesskey="G"
+              tabindex="18" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$"></textarea>
           </div>
           <div>
-            <label for="name" accesskey="W" tabindex="19">Вам есть 18 лет?</label><br />
-            <input type="radio" name="age" value="yes" id="age_yes" accesskey="Y" tabindex="20">
+            <label for="age" accesskey="F" tabindex="19">Вам есть 18 лет?</label><br />
+            <input type="radio" name="age" value="yes" id="age_yes" accesskey="Y" tabindex="20" required>
             Да
-            <input type="radio" name="age" value="no" id="age_no" accesskey="N" tabindex="21">
+            <input type="radio" name="age" value="no" id="age_no" accesskey="N" tabindex="21" required>
             Нет
           </div>
           <div>
-            <input type="checkbox" accesskey="Z" tabindex="22" />
+            <input type="checkbox" name="checkbox" id="checkbox" accesskey="Z" tabindex="22" required />
             Нажимая кнопку, я принимаю условия <a href="#">Лицензионного договора</a>
           </div>
           <div>
