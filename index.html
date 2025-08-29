@@ -201,13 +201,13 @@
           Идейные соображения высшего порядка, а также рамки и место обучения кадров
         </p>
         <form class="section-form__form" action="#" method="post" name="form">
-          <div>
+          <div class="name">
             <label for="name" accesskey="W" tabindex="0">Имя</label><br />
             <input type="text" placeholder="Введите Ваше имя" title="Только буквы, без цифр и пробелов" name="name"
               id="name" accesskey="W" tabindex="1" minlength="2" maxlength="50" required
               pattern="^[a-zA-Zа-яА-ЯёЁ]+(?: [a-zA-Zа-яА-ЯёЁ]+)*$" />
           </div>
-          <div>
+          <div class="direction">
             <label for="city-select" accesskey="D" tabindex="2">Направление</label><br />
             <select name="city" id="city-select" accesskey="D" tabindex="3" required>
               <option value="" accesskey="D" tabindex="4">Куда хотите ехать</option>
@@ -217,47 +217,47 @@
               <option value="novosibirsk" accesskey="D" tabindex="8">Новосибирск</option>
             </select>
           </div>
-          <div>
+          <div class="email">
             <label for="userEmail" accesskey="S" tabindex="9">Email</label><br />
             <input type="email" placeholder="example@mail.com" title="example@mail.com" name="email" id="userEmail"
               accesskey="S" tabindex="10" required
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ или ^[\w.-]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,}$" />
           </div>
-          <div>
+          <div class="phone">
             <label for="tel" accesskey="A" tabindex="11">Телефон</label><br />
             <input type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" title="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
               name="phone" id="tel" accesskey="A" tabindex="12" required
               pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" />
           </div>
-          <div>
+          <div class="date-from">
             <label for="start" accesskey="T" tabindex="13">Дата от</label><br />
             <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-start"
               id="start" accesskey="T" tabindex="14" required
               pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)" />
           </div>
-          <div>
+          <div class="date-before">
             <label for="end" accesskey="H" tabindex="15">Дата до</label><br />
             <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-end"
               id="end" accesskey="H" tabindex="16" required
               pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)" />
           </div>
-          <div>
+          <div class="comment">
             <label for="comment" accesskey="G" tabindex="17">Комментарий</label><br />
             <textarea cols="40" rows="3" name="textArea" id="comment" minlength="5" maxlength="140" accesskey="G"
               tabindex="18" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$"></textarea>
           </div>
-          <div>
+          <div class="age">
             <label for="age" accesskey="F" tabindex="19">Вам есть 18 лет?</label><br />
             <input type="radio" name="age" value="yes" id="age_yes" accesskey="Y" tabindex="20" required>
             Да
             <input type="radio" name="age" value="no" id="age_no" accesskey="N" tabindex="21" required>
             Нет
           </div>
-          <div>
+          <div class="agreement">
             <input type="checkbox" name="checkbox" id="checkbox" accesskey="Z" tabindex="22" required />
-            Нажимая кнопку, я принимаю условия <a href="#">Лицензионного договора</a>
+            Нажимая кнопку, я принимаю условия <a href="#" class="license-agreement">Лицензионного договора</a>
           </div>
-          <div>
+          <div class="buttons">
             <button type="submit" accesskey="S" tabindex="23">Найти тур</button>
             <button type="reset" accesskey="R" tabindex="24">Сбросить</button>
           </div>

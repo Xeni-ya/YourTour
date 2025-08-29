@@ -23,11 +23,69 @@
       height: 986px;
       background: $white;
 
+      display: grid;
+      grid-template-areas:
+        "name direction"
+        "email phone"
+        "date-from date-before"
+        "comment comment"
+        "age age"
+        "agreement agreement"
+        "buttons buttons";
+      grid-template-columns: repeat(2, 500px);
+      grid-template-rows: repeat(7, 1fr);
+      gap: 30px;
 
-      .wrapper {
+      .name {
+        grid-area: name;
+      }
+
+      .direction {
+        grid-area: direction;
+      }
+
+      .email {
+        grid-area: email;
+      }
+
+      .phone {
+        grid-area: phone;
+      }
+
+      .date-from {
+        grid-area: date-from;
+      }
+
+      .date-before {
+        grid-area: date-before;
+      }
+
+      .comment {
+        grid-area: comment;
+      }
+
+      .age {
+        grid-area: age;
+      }
+
+      .agreement {
+        grid-area: agreement;
+
+        font-size: 1.0625rem; // 17px;
+        line-height: 1.42;
+        letter-spacing: -0.01em;
+        color: $grey-300;
+
+        .license-agreement {
+          color: $black;
+        }
+      }
+
+      .buttons {
+        grid-area: buttons;
+
         display: flex;
-        min-width: 500px;
-        width: 100%;
+        gap: 30px;
       }
 
       input,
@@ -46,6 +104,9 @@
         &[type="checkbox"] {
           width: 26px;
           height: 26px;
+          position: relative;
+          top: 8px;
+          margin: 11px;
         }
 
         option {
@@ -69,7 +130,6 @@
         max-width: 235px;
         width: 100%;
         height: 58px;
-        gap: 30px;
 
         &[type="submit"] {
           background: $green-400;
