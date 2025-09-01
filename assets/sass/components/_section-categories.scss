@@ -14,6 +14,7 @@
       color: $black;
       position: relative;
       left: 8px;
+      top: 0px;
     }
 
     @media screen and (max-width: 520px) {
@@ -39,6 +40,7 @@
         display: flex;
         justify-content: center;
         margin-top: 35px;
+        bottom: 2px;
 
         .nav-tabs__items {
           display: flex;
@@ -71,7 +73,7 @@
           }
 
           @media screen and (max-width: 360px) {
-            bottom: 4px;
+            bottom: 3px;
 
             font-size: 1rem; // 16px;
             line-height: 1.42;
@@ -273,6 +275,7 @@
               align-content: center;
               gap: 15px;
               position: relative;
+              top: 1px;
 
               &:hover {
                 border-radius: 50px;
@@ -280,10 +283,6 @@
                 width: 199px;
                 height: 42px;
                 background: $green-400;
-              }
-
-              @media screen and (max-width: 1024px) {
-                bottom: 1px;
               }
 
               @media screen and (max-width: 375px) {
@@ -296,6 +295,11 @@
                 font-weight: 700;
                 font-size: 1.4375rem; // 23px;
                 line-height: 1.22;
+
+                @media screen and (max-width: 1024px) {
+                  position: relative;
+                  bottom: 1px;
+                }
 
                 @media screen and (max-width: 375px) {
                   font-size: 1rem; // 16px;
@@ -315,7 +319,7 @@
                   position: relative;
 
                   @media screen and (max-width: 1024px) {
-                    top: 1px;
+                    bottom: 2px;
                   }
 
                   @media screen and (max-width: 375px) {
@@ -334,7 +338,7 @@
 
       #card-one {
         position: relative;
-        right: 7px;
+        right: 10px;
 
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-1.png');
@@ -378,7 +382,7 @@
 
       #card-three {
         position: relative;
-        left: 21px;
+        left: 25px;
 
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-3.png');
@@ -401,7 +405,7 @@
 
       #card-four {
         position: relative;
-        right: 7px;
+        right: 10px;
 
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-4.png');
@@ -447,7 +451,7 @@
 
       #card-six {
         position: relative;
-        left: 21px;
+        left: 25px;
 
         &::before {
           background-image: url('../../../assets/imgs/card-tour-photo-6.png');
