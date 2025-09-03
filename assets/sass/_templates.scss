@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: inherit;
 
-  outline: palevioletred solid 1px;
+  //outline: palevioletred solid 1px;
 }
 
 html {
@@ -110,10 +110,12 @@ a {
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
-  max-width: 1190px; // 1170px
-  min-width: 338px; // 318px
+  max-width: 1202px; // 1170px
+  min-width: 350px; // 318px
   margin: 0 auto;
   padding: 0 16px;
+  position: relative;
+  left: 7px;
 
   @media screen and (max-width: 355px) {
     min-width: 305px;
