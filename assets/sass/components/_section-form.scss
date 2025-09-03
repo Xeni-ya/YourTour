@@ -7,23 +7,34 @@
 
     .section-form__title {
       margin-top: 135px;
+      position: relative;
 
       @media screen and (max-width: 1920px) {
-        position: relative;
         left: 1px;
         top: 5px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        top: -18px;
       }
     }
 
     .section-form__text {
-      margin: 30px 376px 100px;
+      margin: 30px 0 100px 0;
       text-align: center;
       color: $grey-300;
+      position: relative;
+      // max-width: 418px;
+      // width: 100%;
 
       @media screen and (max-width: 1920px) {
-        position: relative;
         left: 7px;
         top: 5px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        left: 0px;
+        top: -18px;
       }
     }
 
@@ -44,13 +55,23 @@
         "age age"
         "agreement agreement"
         "buttons buttons";
-      grid-template-columns: repeat(2, 500px);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(7, 1fr);
       gap: 33px 30px;
 
       @media screen and (max-width: 1920px) {
         position: relative;
         top: 4px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        padding: 60px;
+        max-width: 918px;
+        width: 100%;
+        height: 966px;
+        left: 30px;
+        top: -19px;
+        gap: 33px 20px;
       }
 
       .name {
@@ -98,7 +119,7 @@
         .radio-label__yes,
         .radio-label__no {
           position: relative;
-          bottom: 4px;
+          bottom: 6px;
         }
 
         .radio-label__yes {
@@ -106,12 +127,20 @@
         }
 
         .radio-label__no {
-          left: 16px;
+          left: 17px;
+
+          @media screen and (max-width: 1024px) {
+            left: 16px;
+          }
         }
 
         #age_no {
           position: relative;
           left: 22px;
+
+          @media screen and (max-width: 1024px) {
+            left: 21px;
+          }
         }
       }
 
@@ -178,6 +207,10 @@
           position: relative;
           top: 7px;
           left: 3px;
+
+          @media screen and (max-width: 1024px) {
+            margin: 33px 11px 0 0;
+          }
         }
 
         option {
@@ -190,9 +223,14 @@
         border: 1px solid $beige-200;
         border-radius: 10px;
         padding: 20px;
-        width: 1030px;
+        max-width: 1030px;
+        width: 100%;
         height: 152px;
         margin-top: 8px;
+
+        @media screen and (max-width: 1024px) {
+          max-width: 798px;
+        }
       }
 
       button {
