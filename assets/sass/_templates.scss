@@ -116,8 +116,4 @@ a {
   padding: 0 16px;
   position: relative;
   left: 7px;
-
-  @media screen and (max-width: 355px) {
-    min-width: 305px;
-  }
 }
