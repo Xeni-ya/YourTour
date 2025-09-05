@@ -2,6 +2,10 @@
 @use "../templates";
 
 .section-form {
+  @media screen and (max-width: 375px) {
+    font-size: 1rem;
+  }
+
   .container {
     @extend %container;
 
@@ -17,6 +21,11 @@
       @media screen and (max-width: 1024px) {
         top: -18px;
       }
+
+      @media screen and (max-width: 375px) {
+        margin-top: -71px;
+        left: -2px;
+      }
     }
 
     .section-form__text {
@@ -24,8 +33,6 @@
       text-align: center;
       color: $grey-300;
       position: relative;
-      // max-width: 418px;
-      // width: 100%;
 
       @media screen and (max-width: 1920px) {
         left: 7px;
@@ -35,6 +42,12 @@
       @media screen and (max-width: 1024px) {
         left: 0px;
         top: -18px;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 1rem;
+        left: -2px;
+        top: -28px;
       }
     }
 
@@ -74,28 +87,69 @@
         gap: 33px 20px;
       }
 
+      @media screen and (max-width: 375px) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        padding: 20px 20px 40px;
+        max-width: 318px;
+        width: 100%;
+        height: 1110px;
+        left: -2px;
+        top: -87px;
+      }
+
       .name {
         grid-area: name;
       }
 
       .direction {
         grid-area: direction;
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          bottom: 3px;
+        }
+
+        option {
+          color: $black;
+        }
       }
 
       .email {
         grid-area: email;
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          bottom: 3px;
+        }
       }
 
       .phone {
         grid-area: phone;
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          bottom: 6px;
+        }
       }
 
       .date-from {
         grid-area: date-from;
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          bottom: 8px;
+        }
       }
 
       .date-before {
         grid-area: date-before;
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          bottom: 11px;
+        }
       }
 
       .comment {
@@ -105,6 +159,32 @@
           position: relative;
           bottom: 1px;
         }
+
+        @media screen and (max-width: 375px) {
+          bottom: 14px;
+        }
+
+        textarea {
+          background: $beige-100;
+          border: 1px solid $beige-200;
+          border-radius: 10px;
+          padding: 20px;
+          max-width: 1030px;
+          width: 100%;
+          height: 152px;
+          margin-top: 8px;
+
+          @media screen and (max-width: 1024px) {
+            max-width: 798px;
+          }
+
+          @media screen and (max-width: 375px) {
+            padding: 10px;
+            max-width: 278px;
+            width: 100%;
+            height: 132px;
+          }
+        }
       }
 
       .age {
@@ -113,6 +193,15 @@
         @media screen and (max-width: 1920px) {
           position: relative;
           bottom: 9px;
+        }
+
+        @media screen and (max-width: 375px) {
+          position: relative;
+          bottom: 23px;
+        }
+
+        input[type="radio"] {
+          margin: 9px 11px 0 0;
         }
 
         // позиционирование радиокнопок да-нет
@@ -158,6 +247,18 @@
           right: 3px;
         }
 
+
+        input[type="checkbox"] {
+          margin: 33px 19px 0 0;
+          position: relative;
+          top: 7px;
+          left: 3px;
+
+          @media screen and (max-width: 1024px) {
+            margin: 33px 11px 0 0;
+          }
+        }
+
         .license-agreement {
           color: $black;
         }
@@ -170,6 +271,34 @@
         gap: 30px;
         position: relative;
         bottom: 55px;
+
+        @media screen and (max-width: 375px) {
+          gap: 10px;
+        }
+
+        button {
+          border: none;
+          border-radius: 10px;
+          padding: 15px 30px;
+          max-width: 235px;
+          width: 100%;
+          height: 58px;
+
+          @media screen and (max-width: 375px) {
+            max-width: 134px;
+            height: 47px;
+          }
+
+          &[type="submit"] {
+            background: $green-400;
+            color: $white;
+          }
+
+          &[type="reset"] {
+            background: $green-100;
+            color: $green-400;
+          }
+        }
       }
 
       // стили элементов формы
@@ -190,65 +319,24 @@
           cursor: pointer;
         }
 
+        @media screen and (max-width: 375px) {
+          padding: 10px;
+          max-width: 278px;
+          width: 100%;
+          height: 43px;
+        }
+
         // стилизация радиокнопок и чекбоксов
         &[type="radio"],
         &[type="checkbox"] {
           width: 26px;
           height: 26px;
           accent-color: $black;
-        }
 
-        &[type="radio"] {
-          margin: 9px 11px 0 0;
-        }
-
-        &[type="checkbox"] {
-          margin: 33px 19px 0 0;
-          position: relative;
-          top: 7px;
-          left: 3px;
-
-          @media screen and (max-width: 1024px) {
-            margin: 33px 11px 0 0;
+          @media screen and (max-width: 375px) {
+            width: 20px;
+            height: 20px;
           }
-        }
-
-        option {
-          color: $black;
-        }
-      }
-
-      textarea {
-        background: $beige-100;
-        border: 1px solid $beige-200;
-        border-radius: 10px;
-        padding: 20px;
-        max-width: 1030px;
-        width: 100%;
-        height: 152px;
-        margin-top: 8px;
-
-        @media screen and (max-width: 1024px) {
-          max-width: 798px;
-        }
-      }
-
-      button {
-        border: none;
-        border-radius: 10px;
-        padding: 15px 30px;
-        max-width: 235px;
-        width: 100%;
-        height: 58px;
-
-        &[type="submit"] {
-          background: $green-400;
-          color: $white;
-        }
-
-        &[type="reset"] {
-          background: $green-100;
-          color: $green-400;
         }
       }
     }
