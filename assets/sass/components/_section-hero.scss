@@ -35,12 +35,10 @@
       .section-hero__title {
         margin: 0;
         width: 100%;
-        position: relative;
-        left: 7px;
 
         @media screen and (max-width: 360px) {
           position: relative;
-          left: 8px;
+          left: 1px;
         }
       }
 
@@ -49,12 +47,9 @@
         max-width: 563px;
         margin-top: 50px;
         letter-spacing: 0.01em;
-        position: relative;
-        left: 13px;
 
         @media screen and (max-width: 1024px) {
           max-width: 410px;
-          left: 7px;
         }
 
         @media screen and (max-width: 860px) {
@@ -73,7 +68,9 @@
         @media screen and (max-width: 360px) {
           font-size: 1rem; // 16px
           margin-top: 40px;
-          left: 9px;
+          position: relative;
+          left: 1px;
+          top: 1px;
         }
       }
 
@@ -92,7 +89,6 @@
         color: $black;
 
         margin-top: 50px;
-        margin-left: 15px;
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
