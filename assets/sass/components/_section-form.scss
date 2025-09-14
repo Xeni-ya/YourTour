@@ -2,12 +2,18 @@
 @use "../templates";
 
 .section-form {
+  @media screen and (max-width: 425px) {
+    font-size: 1.125rem; //18px
+  }
+
   @media screen and (max-width: 375px) {
     font-size: 1rem;
   }
 
   .container {
     @extend %container;
+    position: relative;
+    left: 7px;
 
     .section-form__title {
       margin-top: 135px;
@@ -21,6 +27,15 @@
       @media screen and (max-width: 1024px) {
         top: -18px;
       }
+
+      @media screen and (max-width: 500px) {
+        font-size: 3.5rem; //56px
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 2.5rem; //40px
+      }
+
 
       @media screen and (max-width: 375px) {
         margin-top: -71px;
@@ -42,6 +57,10 @@
       @media screen and (max-width: 1024px) {
         left: 0px;
         top: -18px;
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 1.125rem; //18px
       }
 
       @media screen and (max-width: 375px) {
@@ -68,7 +87,7 @@
         "age age"
         "agreement agreement"
         "buttons buttons";
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
       grid-template-rows: repeat(7, 1fr);
       gap: 33px 30px;
 
@@ -87,7 +106,29 @@
         gap: 33px 20px;
       }
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 986px) {
+        left: 0px;
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-template-areas:
+          "name"
+          "direction"
+          "email"
+          "phone"
+          "date-from"
+          "date-before"
+          "comment"
+          "age"
+          "agreement"
+          "buttons";
+        grid-template-columns: 1fr;
+        gap: 30px;
+        height: 1360px;
+      }
+
+
+      @media screen and (max-width: 360px) {
         display: flex;
         flex-direction: column;
         border-radius: 30px;
@@ -187,6 +228,10 @@
 
           @media screen and (max-width: 1024px) {
             max-width: 798px;
+          }
+
+          @media screen and (max-width: 425px) {
+            max-width: 278px;
           }
 
           @media screen and (max-width: 375px) {
@@ -317,70 +362,63 @@
           position: relative;
           bottom: 70px;
         }
+      }
+    }
 
-        button {
-          border: none;
-          border-radius: 10px;
-          padding: 15px 30px;
-          max-width: 235px;
-          width: 100%;
-          height: 58px;
-          white-space: nowrap;
-          cursor: pointer;
+    // стили элементов формы
+    input,
+    select {
+      margin-top: 8px;
+      border: 1px solid $beige-200;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 500px;
+      width: 100%;
+      height: 68px;
+      color: $black;
+      background: $beige-100;
 
-          @media screen and (max-width: 375px) {
-            max-width: 134px;
-            height: 47px;
-          }
-        }
+      &::placeholder {
+        color: $gray-300 !important;
+        opacity: 1;
       }
 
-      // стили элементов формы
-      input,
-      select {
-        margin-top: 8px;
-        border: 1px solid $beige-200;
-        border-radius: 10px;
-        padding: 20px;
-        max-width: 500px;
-        width: 100%;
-        height: 68px;
+      &:hover {
+        background: $beige-200;
+        cursor: pointer;
+      }
+
+      &:focus {
         color: $black;
-        background: $beige-100;
+        outline: none;
+        border: 1px solid $gray-300;
+      }
 
-        &::placeholder {
-          color: $gray-300 !important;
-          opacity: 1;
-        }
+      @media screen and (max-width: 768px) {
+        max-width: 600px;
+      }
 
-        &:hover {
-          background: $beige-200;
-          cursor: pointer;
-        }
+      @media screen and (max-width: 500px) {
+        max-width: 332px;
+        height: 58px;
+        padding: 15px;
+      }
 
-        &:focus {
-          color: $black;
-          outline: none;
-          border: 1px solid $gray-300;
-        }
+      @media screen and (max-width: 425px) {
+        padding: 10px;
+        max-width: 278px;
+        height: 43px;
+      }
+
+      // стилизация радиокнопок и чекбоксов
+      &[type="radio"],
+      &[type="checkbox"] {
+        width: 26px;
+        height: 26px;
 
         @media screen and (max-width: 375px) {
-          padding: 10px;
-          max-width: 278px;
-          width: 100%;
-          height: 43px;
-        }
-
-        // стилизация радиокнопок и чекбоксов
-        &[type="radio"],
-        &[type="checkbox"] {
-          width: 26px;
-          height: 26px;
-
-          @media screen and (max-width: 375px) {
-            width: 20px;
-            height: 20px;
-          }
+          width: 20px;
+          height: 20px;
         }
       }
     }

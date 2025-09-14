@@ -5,6 +5,8 @@
   .container {
     @extend %container;
     margin-top: 135px;
+    position: relative;
+    left: 7px;
 
     @media screen and (max-width: 360px) {
       margin-top: 75px;
