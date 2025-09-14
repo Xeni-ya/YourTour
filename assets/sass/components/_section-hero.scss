@@ -21,6 +21,8 @@
 
   .section-hero__wrap {
     @extend %container;
+    position: relative;
+    left: 7px;
 
     .section-hero__inner {
       width: 100%;
