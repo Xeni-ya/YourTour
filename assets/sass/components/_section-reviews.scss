@@ -1,0 +1,93 @@
+@use "../vars" as *;
+@use "../templates";
+
+.section-reviews {
+  margin-top: 135px;
+
+  .container {
+    @extend %container;
+    position: relative;
+    left: 7px;
+
+    .section-reviews__title {
+      margin: 0 320.5px;
+      position: relative;
+      top: 3px;
+      left: 1px;
+    }
+
+    .section-reviews__description {
+      text-align: center;
+      color: $gray-300;
+      margin: 30px 376px 100px;
+      position: relative;
+      top: 3px;
+    }
+
+    .section-reviews__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .section-reviews__item {
+        .review-card {
+          border-radius: 50px;
+          padding: 40px;
+          max-width: 570px;
+          width: 100%;
+          height: 673px;
+          background: $beige-200;
+
+          display: flex;
+          align-content: space-between;
+          flex-wrap: wrap;
+
+          .review-card__quote {
+            .review-card__text {
+              font-weight: 700;
+              font-size: 1.4375rem; // 23px;
+              line-height: 1.22;
+              color: $black;
+
+              position: relative;
+              top: 3px;
+              left: 1px;
+            }
+          }
+
+          .review-card__footer {
+            min-width: 490px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .review-card__photo {
+              border-radius: 100px;
+              width: 75px;
+              height: 75px;
+            }
+
+            .review-card__info {
+              .review-card__name {
+                font-weight: 500;
+                font-size: 2.1875rem; //35px;
+                line-height: 1.22;
+                color: $black;
+
+                position: relative;
+                top: 3px;
+              }
+
+              .review-card__tour {
+                font-size: 1.0625rem; //17px;
+                letter-spacing: -0.01em;
+                color: $gray-300;
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
