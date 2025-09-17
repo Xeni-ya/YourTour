@@ -10,24 +10,38 @@
     left: 7px;
 
     .section-reviews__title {
-      margin: 0 320.5px;
+      padding: 0 247.5px;
       position: relative;
       top: 3px;
       left: 1px;
+
+      @media screen and (max-width: 1024px) {
+        top: -19px;
+      }
     }
 
     .section-reviews__description {
       text-align: center;
       color: $gray-300;
-      margin: 30px 376px 100px;
+      margin: 30px 0 100px 0;
       position: relative;
       top: 3px;
+
+      @media screen and (max-width: 1024px) {
+        top: -19px;
+      }
     }
 
     .section-reviews__list {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      @media screen and (max-width: 1024px) {
+        justify-content: space-evenly;
+        position: relative;
+        top: -23px;
+      }
 
       .section-reviews__item {
         .review-card {
@@ -42,6 +56,13 @@
           align-content: space-between;
           flex-wrap: wrap;
 
+          @media screen and (max-width: 1024px) {
+            border-radius: 50px;
+            padding: 40px;
+            max-width: 450px;
+            height: 841px;
+          }
+
           .review-card__quote {
             .review-card__text {
               font-weight: 700;
@@ -52,14 +73,25 @@
               position: relative;
               top: 3px;
               left: 1px;
+
+              @media screen and (max-width: 1024px) {
+                left: 5px;
+              }
             }
           }
 
           .review-card__footer {
-            min-width: 490px;
+            padding: 70px 0px 0px;
+            max-width: 490px;
+            width: 100%;
+            height: 145px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @media screen and (max-width: 1024px) {
+              max-width: 370px;
+            }
 
             .review-card__photo {
               border-radius: 100px;
