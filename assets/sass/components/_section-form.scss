@@ -2,6 +2,8 @@
 @use "../templates";
 
 .section-form {
+  margin-top: 135px;
+
   @media screen and (max-width: 425px) {
     font-size: 1.125rem; //18px
   }
@@ -16,7 +18,6 @@
     left: 7px;
 
     .section-form__title {
-      margin-top: 135px;
       position: relative;
 
       @media screen and (max-width: 1920px) {

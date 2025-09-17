@@ -2,9 +2,10 @@
 @use "../templates";
 
 .section-categories {
+  margin-top: 135px;
+
   .container {
     @extend %container;
-    margin-top: 135px;
     position: relative;
     left: 7px;
 
