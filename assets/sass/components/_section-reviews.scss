@@ -4,20 +4,31 @@
 .section-reviews {
   margin-top: 135px;
 
+  @media screen and (max-width: 360px) {
+    margin-top: 75px;
+  }
+
   .container {
     @extend %container;
     position: relative;
     left: 7px;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
     .section-reviews__title {
-      padding: 0 247.5px;
       position: relative;
       top: 3px;
       left: 1px;
+      width: 529px;
 
       @media screen and (max-width: 1024px) {
         top: -19px;
       }
+
+      @media screen and (max-width: 360px) {}
     }
 
     .section-reviews__description {
@@ -30,17 +41,21 @@
       @media screen and (max-width: 1024px) {
         top: -19px;
       }
+
+      @media screen and (max-width: 360px) {
+        margin: 20px 0 50px 0;
+        font-size: 1rem;
+      }
     }
 
     .section-reviews__list {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      gap: 30px;
 
       @media screen and (max-width: 1024px) {
-        justify-content: space-evenly;
         position: relative;
-        top: -23px;
+        top: -20px;
+        gap: 18px;
       }
 
       .section-reviews__item {
@@ -75,7 +90,7 @@
               left: 1px;
 
               @media screen and (max-width: 1024px) {
-                left: 5px;
+                top: -1px;
               }
             }
           }
@@ -105,9 +120,6 @@
                 font-size: 2.1875rem; //35px;
                 line-height: 1.22;
                 color: $black;
-
-                position: relative;
-                top: 3px;
               }
 
               .review-card__tour {
