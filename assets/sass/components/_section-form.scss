@@ -10,6 +10,8 @@
 
   @media screen and (max-width: 375px) {
     font-size: 1rem;
+    margin-top: 94px;
+    height: 1277px;
   }
 
   .container {
@@ -37,10 +39,9 @@
         font-size: 2.5rem; //40px
       }
 
-
       @media screen and (max-width: 375px) {
-        margin-top: -71px;
         left: -2px;
+        font-size: 2.125rem; //34px
       }
     }
 
@@ -150,7 +151,7 @@
 
         @media screen and (max-width: 375px) {
           position: relative;
-          bottom: 3px;
+          bottom: 1px;
         }
 
         .placeholder-option::placeholder {
@@ -163,7 +164,7 @@
 
         @media screen and (max-width: 375px) {
           position: relative;
-          bottom: 3px;
+          bottom: -4px;
         }
       }
 
@@ -172,7 +173,7 @@
 
         @media screen and (max-width: 375px) {
           position: relative;
-          bottom: 6px;
+          bottom: -4px;
         }
       }
 
@@ -181,7 +182,7 @@
 
         @media screen and (max-width: 375px) {
           position: relative;
-          bottom: 8px;
+          bottom: -3px;
         }
       }
 
@@ -190,7 +191,7 @@
 
         @media screen and (max-width: 375px) {
           position: relative;
-          bottom: 11px;
+          bottom: -3px;
         }
       }
 
@@ -203,7 +204,7 @@
         }
 
         @media screen and (max-width: 375px) {
-          bottom: 14px;
+          bottom: -4px;
         }
 
         textarea {
@@ -254,7 +255,7 @@
 
         @media screen and (max-width: 375px) {
           position: relative;
-          bottom: 23px;
+          bottom: 2px;
         }
 
         input[type="radio"] {
@@ -315,7 +316,7 @@
 
         @media screen and (max-width: 715px) {
           position: relative;
-          bottom: 69px;
+          bottom: 45px;
           display: flex;
           align-items: baseline
         }
@@ -361,7 +362,7 @@
         @media screen and (max-width: 375px) {
           gap: 10px;
           position: relative;
-          bottom: 70px;
+          bottom: 43px;
         }
       }
     }
