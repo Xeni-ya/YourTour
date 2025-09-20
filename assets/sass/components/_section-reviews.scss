@@ -2,11 +2,7 @@
 @use "../templates";
 
 .section-reviews {
-  margin-top: 135px;
-
-  @media screen and (max-width: 360px) {
-    margin-top: 75px;
-  }
+  outline: blue solid 3px;
 
   .container {
     @extend %container;
@@ -18,7 +14,12 @@
     flex-wrap: wrap;
     align-items: center;
 
+    @media screen and (max-width: 360px) {
+      flex-direction: row;
+    }
+
     .section-reviews__title {
+      margin-top: 135px;
       position: relative;
       top: 3px;
       left: 1px;
@@ -28,7 +29,10 @@
         top: -19px;
       }
 
-      @media screen and (max-width: 360px) {}
+      @media screen and (max-width: 360px) {
+        margin-top: 7px;
+        left: -2px;
+      }
     }
 
     .section-reviews__description {
@@ -58,6 +62,10 @@
         gap: 18px;
       }
 
+      @media screen and (max-width: 360px) {
+        flex-direction: column;
+      }
+
       .section-reviews__item {
         .review-card {
           border-radius: 50px;
@@ -78,6 +86,14 @@
             height: 841px;
           }
 
+          @media screen and (max-width: 360px) {
+            border-radius: 20px;
+            padding: 20px;
+            width: 318px;
+            max-height: 592px;
+            height: 100%;
+          }
+
           .review-card__quote {
             .review-card__text {
               font-weight: 700;
@@ -91,6 +107,15 @@
 
               @media screen and (max-width: 1024px) {
                 top: -1px;
+              }
+
+              @media screen and (max-width: 360px) {
+                font-size: 1rem; // 16px
+                line-height: 1.44;
+
+                position: relative;
+                left: -2px;
+                width: 99%;
               }
             }
           }
@@ -108,18 +133,50 @@
               max-width: 370px;
             }
 
+            @media screen and (max-width: 360px) {
+              padding: 40px 0px 0px;
+              max-width: 278px;
+              height: 115px;
+            }
+
             .review-card__photo {
               border-radius: 100px;
               width: 75px;
               height: 75px;
+
+              @media screen and (max-width: 360px) {
+                position: relative;
+                left: -2px;
+              }
             }
 
             .review-card__info {
+              position: relative;
+              top: 3px;
+              left: 1px;
+
+              @media screen and (max-width: 1024px) {
+                top: 0;
+                left: 1px;
+              }
+
+              @media screen and (max-width: 360px) {
+                top: 9px;
+                left: -2px;
+              }
+
               .review-card__name {
                 font-weight: 500;
                 font-size: 2.1875rem; //35px;
                 line-height: 1.22;
                 color: $black;
+
+                @media screen and (max-width: 360px) {
+                  font-weight: 700;
+                  font-size: 1.4375rem; //23px;
+                  line-height: 1.20;
+                  letter-spacing: 0.04em;
+                }
               }
 
               .review-card__tour {
@@ -127,6 +184,11 @@
                 letter-spacing: -0.01em;
                 color: $gray-300;
                 margin-top: 8px;
+
+                @media screen and (max-width: 360px) {
+                  font-size: 1rem; //16px;
+                  letter-spacing: -0.01em;
+                }
               }
             }
           }
