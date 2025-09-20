@@ -23,15 +23,40 @@
       position: relative;
       top: 3px;
       left: 1px;
-      width: 529px;
+      max-width: 529px;
+      width: 100%;
 
       @media screen and (max-width: 1024px) {
         top: -19px;
       }
 
+      @media screen and (max-width: 481px) {
+        font-size: 2.875rem; //46px
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 2.5rem; //40px
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 2.125rem; //34px
+      }
+
       @media screen and (max-width: 360px) {
         margin-top: 7px;
         left: -2px;
+      }
+
+      @media screen and (max-width: 354px) {
+        font-size: 2rem; //32px
+        max-width: 317px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 320px) {
+        max-width: 283px;
+        width: 100%;
+        font-size: 1.875rem; //30px
       }
     }
 
@@ -46,9 +71,16 @@
         top: -19px;
       }
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 1024px) {}
+
+      @media screen and (max-width: 375px) {
         margin: 20px 0 50px 0;
         font-size: 1rem;
+      }
+
+      @media screen and (max-width: 320px) {
+        max-width: 281px;
+        width: 100%;
       }
     }
 
@@ -62,6 +94,10 @@
         gap: 18px;
       }
 
+      @media screen and (max-width: 736px) {
+        flex-direction: column;
+      }
+
       @media screen and (max-width: 360px) {
         flex-direction: column;
       }
@@ -72,12 +108,17 @@
           padding: 40px;
           max-width: 570px;
           width: 100%;
-          height: 673px;
+          max-height: 673px;
+          height: 100%;
           background: $beige-200;
 
           display: flex;
           align-content: space-between;
           flex-wrap: wrap;
+
+          @media screen and (max-width: 1164px) {
+            max-height: 100%;
+          }
 
           @media screen and (max-width: 1024px) {
             border-radius: 50px;
@@ -89,9 +130,18 @@
           @media screen and (max-width: 360px) {
             border-radius: 20px;
             padding: 20px;
-            width: 318px;
+            max-width: 318px;
             max-height: 592px;
             height: 100%;
+          }
+
+          @media screen and (max-width: 354px) {
+            max-width: 315px;
+          }
+
+          @media screen and (max-width: 320px) {
+            max-width: 281px;
+            max-height: 100%;
           }
 
           .review-card__quote {
@@ -106,7 +156,31 @@
               left: 1px;
 
               @media screen and (max-width: 1024px) {
-                top: -1px;
+                top: 0px;
+              }
+
+              @media screen and (max-width: 912px) {
+                font-size: 1.3125rem; //21px
+              }
+
+              @media screen and (max-width: 815px) {
+                font-size: 1.25rem; // 20px
+              }
+
+              @media screen and (max-width: 768px) {
+                font-size: 1.1875rem; // 19px
+              }
+
+              @media screen and (max-width: 736px) {
+                font-size: 1.4375rem; // 23px;
+              }
+
+              @media screen and (max-width: 425px) {
+                font-size: 1.25rem; // 20px
+              }
+
+              @media screen and (max-width: 375px) {
+                font-size: 1.125rem;
               }
 
               @media screen and (max-width: 360px) {
@@ -144,6 +218,11 @@
               width: 75px;
               height: 75px;
 
+              @media screen and (max-width: 746px) {
+                width: 65px;
+                height: 65px;
+              }
+
               @media screen and (max-width: 360px) {
                 position: relative;
                 left: -2px;
@@ -171,6 +250,18 @@
                 line-height: 1.22;
                 color: $black;
 
+                @media screen and (max-width: 768px) {
+                  font-size: 2rem; //32px
+                }
+
+                @media screen and (max-width: 736px) {
+                  font-size: 2.1875rem;
+                }
+
+                @media screen and (max-width: 375px) {
+                  font-size: 1.75rem; //28px
+                }
+
                 @media screen and (max-width: 360px) {
                   font-weight: 700;
                   font-size: 1.4375rem; //23px;
@@ -185,8 +276,11 @@
                 color: $gray-300;
                 margin-top: 8px;
 
-                @media screen and (max-width: 360px) {
+                @media screen and (max-width: 768px) {
                   font-size: 1rem; //16px;
+                }
+
+                @media screen and (max-width: 360px) {
                   letter-spacing: -0.01em;
                 }
               }
