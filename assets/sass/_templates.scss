@@ -23,7 +23,7 @@ html {
 body {
   height: 100%;
   background-color: $beige-100;
-  //overflow-x: hidden; //убрать горизонтальный скролл
+  overflow-x: hidden; //убрать горизонтальный скролл
 
   font-family: $font-family;
   font-weight: $font-weight;
@@ -155,7 +155,9 @@ a {
 
 %container {
   max-width: 1202px; // 1170px
-  min-width: 350px; // 318px
+  min-width: 320px; // 318px
   margin: 0 auto;
   padding: 0 16px;
+
+  outline: rgb(254, 0, 0) solid 3px;
 }
