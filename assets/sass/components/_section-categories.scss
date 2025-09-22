@@ -39,6 +39,18 @@
         top: 1px;
         margin-top: 75px;
       }
+
+      @media screen and (max-width: 354px) {
+        width: 95%;
+      }
+
+      @media screen and (max-width: 335px) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: 320px) {
+        width: 85%;
+      }
     }
 
     .tabs {
@@ -49,6 +61,18 @@
         justify-content: center;
         margin-top: 35px;
         bottom: 2px;
+
+        @media screen and (max-width: 354px) {
+          width: 95%;
+        }
+
+        @media screen and (max-width: 335px) {
+          width: 90%;
+        }
+
+        @media screen and (max-width: 320px) {
+          width: 83%;
+        }
 
         .nav-tabs__items {
           display: flex;
@@ -196,6 +220,18 @@
 
           @media screen and (max-width: 520px) {
             flex-wrap: nowrap;
+          }
+
+          @media screen and (max-width: 354px) {
+            width: 95%;
+          }
+
+          @media screen and (max-width: 335px) {
+            width: 90%;
+          }
+
+          @media screen and (max-width: 320px) {
+            width: 85%;
           }
 
           .tabs__block:target {
