@@ -39,6 +39,10 @@
         top: 1px;
         margin-top: 75px;
       }
+
+      @media screen and (max-width: 320px) {
+        width: 97%;
+      }
     }
 
     .tabs {
@@ -49,6 +53,10 @@
         justify-content: center;
         margin-top: 35px;
         bottom: 2px;
+
+        @media screen and (max-width: 320px) {
+          width: 96%;
+        }
 
         .nav-tabs__items {
           display: flex;
@@ -196,6 +204,10 @@
 
           @media screen and (max-width: 520px) {
             flex-wrap: nowrap;
+          }
+
+          @media screen and (max-width: 320px) {
+            width: 97%;
           }
 
           .tabs__block:target {
