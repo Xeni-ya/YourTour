@@ -1,0 +1,118 @@
+@use "../vars" as *;
+@use "../templates";
+
+.section-gallery {
+  .container {
+    @extend %container;
+    position: relative;
+    left: 7px;
+
+    .section-gallery__title {
+      margin-top: 135px;
+      position: relative;
+      top: 3px;
+      left: 1px;
+    }
+
+    .section-gallery__description {
+      text-align: center;
+      color: $gray-300;
+      margin: 30px 0 100px 0;
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  .section-gallery__grid {
+    position: relative;
+    left: 7px;
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(99px 349px) 1fr 1fr 1fr minmax(99px, 348px));
+    // grid-template-rows: repeat(auto-fill, minmax(110px, 301px) minmax(110px, 301px) minmax(110px, 301px));
+    gap: 30px;
+    padding: 0 30px;
+    justify-content: center;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .section-gallery__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+    }
+
+    .image-one {
+      /* с какой вертикальной линии начнется изображение 
+        grid-row-start: 1;
+        на какой горизонтальной линии начнется картинка 
+        grid-column-start: 1;
+        до какой вертикальной линии дотяниться картинка 
+        grid-row-end: 3;
+        до какой горизонтальной линии дотяниться картинка
+        grid-column-end: 2; */
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .image-two {
+      grid-column-start: 5;
+      grid-column-end: 9;
+    }
+
+    .image-three {
+      grid-column-start: 9;
+      grid-column-end: 13;
+    }
+
+    .image-four {
+      grid-column-start: 13;
+      grid-column-end: 17;
+    }
+
+    .image-five {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .image-six {
+      grid-column-start: 4;
+      grid-column-end: 7;
+    }
+
+    .image-seven {
+      grid-column-start: 7;
+      grid-column-end: 10;
+    }
+
+    .image-eight {
+      grid-column-start: 10;
+      grid-column-end: 13;
+    }
+
+    .image-nine {
+      grid-column-start: 13;
+      grid-column-end: 16;
+    }
+
+    .image-ten {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    .image-eleven {
+      grid-column-start: 5;
+      grid-column-end: 9;
+    }
+
+    .image-twelve {
+      grid-column-start: 9;
+      grid-column-end: 13;
+    }
+
+    .image-thirteen {
+      grid-column-start: 13;
+      grid-column-end: 17;
+    }
+  }
+}
