@@ -161,3 +161,14 @@ a {
 
   outline: rgb(254, 0, 0) solid 3px;
 }
+
+%gallery-container {
+  max-width: 1966px; // 1920px
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 23px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 13px;
+  }
+}
