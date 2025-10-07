@@ -171,4 +171,8 @@ a {
   @media screen and (max-width: 1024px) {
     padding: 0 13px;
   }
+
+  @media screen and (max-width: 360px) {
+    padding: 0 16px;
+  }
 }
