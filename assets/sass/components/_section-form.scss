@@ -2,8 +2,6 @@
 @use "../templates";
 
 .section-form {
-  outline: greenyellow solid 3px;
-
   @media screen and (max-width: 425px) {
     font-size: 1.125rem; //18px
   }
@@ -40,7 +38,6 @@
 
       @media screen and (max-width: 360px) {
         margin-top: -71px;
-        left: -2px;
         font-size: 2.125rem; //34px
       }
     }
@@ -68,6 +65,7 @@
         font-size: 1rem;
         left: -2px;
         top: -28px;
+        width: 101%;
       }
     }
 
@@ -137,7 +135,6 @@
         max-width: 318px;
         width: 100%;
         height: 1110px;
-        left: -2px;
         top: -87px;
       }
 

@@ -23,7 +23,7 @@ html {
 body {
   height: 100%;
   background-color: $beige-100;
-  overflow-x: hidden; //убрать горизонтальный скролл
+  //overflow-x: hidden;
 
   font-family: $font-family;
   font-weight: $font-weight;
@@ -154,12 +154,10 @@ a {
 // Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 
 %container {
-  max-width: 1202px; // 1170px
+  max-width: 1198px; // 1170px
   min-width: 320px; // 318px
   margin: 0 auto;
-  padding: 0 16px;
-
-  outline: rgb(254, 0, 0) solid 3px;
+  padding: 0 14px;
 }
 
 %gallery-container {
