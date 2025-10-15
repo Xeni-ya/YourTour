@@ -2,5 +2,6 @@
 @use "fonts";
 @use "vars" as *;
 @use "templates";
+@use "mixin";
 
 @use "./components/license-agreement";
