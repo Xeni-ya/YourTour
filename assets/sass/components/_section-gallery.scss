@@ -1,11 +1,11 @@
 @use "../vars" as *;
+@use "../mixin" as *;
 @use "../templates";
 
 .section-gallery {
   .container {
     @extend %container;
-    position: relative;
-    left: 7px;
+    @include offset;
 
     @media screen and (max-width: 1024px) {
       bottom: 23px;
@@ -65,11 +65,16 @@
       height: 48vh;
     }
 
-    .section-gallery__image {
+    .section-gallery__image,
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       border-radius: 50px;
+      overflow: hidden;
+
+      @media screen and (max-width: 1920px) {}
 
       @media screen and (max-width: 425px) {
         border-radius: 20px;
@@ -86,6 +91,8 @@
       grid-row-end: 4;
       //до какой горизонтальной линии дотяниться картинка 
       grid-column-end: 6;
+
+      @include offset-gallery-grid-one;
 
       @media screen and (max-width: 1024px) {
         grid-area: 1 / 1 / 4 / 5;
@@ -105,8 +112,7 @@
       grid-column-start: 6;
       grid-column-end: 11;
 
-      position: relative;
-      left: 1px;
+      @include offset-gallery-grid-one;
 
       @media screen and (max-width: 1024px) {
         display: none;
@@ -119,8 +125,7 @@
       grid-column-start: 11;
       grid-column-end: 16;
 
-      position: relative;
-      left: 1px;
+      @include offset-gallery-grid-one;
 
       @media screen and (max-width: 1024px) {
         grid-area: 1 / 5 / 4 / 9;
@@ -136,6 +141,8 @@
       grid-row-end: 4;
       grid-column-start: 16;
       grid-column-end: 21;
+
+      @include offset-gallery-grid-one;
 
       @media screen and (max-width: 1024px) {
         grid-area: 1 / 9 / 4 / 13;
@@ -153,6 +160,8 @@
       grid-row: 4/7;
       grid-column: 1/5;
 
+      @include offset-gallery-grid-two;
+
       @media screen and (max-width: 1024px) {
         grid-area: 4 / 1 / 7 / 4;
       }
@@ -168,6 +177,8 @@
       grid-row: 4/7;
       grid-column: 5/9;
 
+      @include offset-gallery-grid-two;
+
       @media screen and (max-width: 1024px) {
         grid-area: 4 / 4 / 7 / 7;
       }
@@ -181,6 +192,8 @@
       grid-row: 4/7;
       grid-column: 9/13;
 
+      @include offset-gallery-grid-two;
+
       @media screen and (max-width: 1024px) {
         display: none;
       }
@@ -189,6 +202,8 @@
     .section-gallery__image:nth-child(8) {
       grid-row: 4/7;
       grid-column: 13/17;
+
+      @include offset-gallery-grid-two;
 
       @media screen and (max-width: 1024px) {
         grid-area: 4 / 7 / 7 / 10;
@@ -199,11 +214,18 @@
         position: relative;
         left: 7px;
       }
+
+      img {
+        width: 347px;
+        height: 301px;
+      }
     }
 
     .section-gallery__image:nth-child(13) {
       grid-row: 4/7;
       grid-column: 17/21;
+
+      @include offset-gallery-grid-two;
 
       @media screen and (max-width: 1024px) {
         grid-area: 4 / 10 / 7 / 13;
@@ -218,6 +240,8 @@
 
     .section-gallery__image:nth-child(9) {
       grid-area: 7 / 1 / 10 / 6;
+
+      @include offset-gallery-grid-three;
 
       @media screen and (max-width: 1024px) {
         grid-area: 7 / 1 / 10 / 5;
@@ -234,6 +258,8 @@
     .section-gallery__image:nth-child(10) {
       grid-area: 7 / 6 / 10 / 11;
 
+      @include offset-gallery-grid-three;
+
       @media screen and (max-width: 1024px) {
         grid-area: 7 / 5 / 10 / 9;
       }
@@ -245,6 +271,8 @@
 
     .section-gallery__image:nth-child(11) {
       grid-area: 7 / 11 / 10 / 16;
+
+      @include offset-gallery-grid-three;
 
       @media screen and (max-width: 1024px) {
         grid-area: 7 / 9 / 10 / 13;
@@ -260,6 +288,8 @@
 
     .section-gallery__image:nth-child(12) {
       grid-area: 7 / 16 / 10 / 21;
+
+      @include offset-gallery-grid-three;
 
       @media screen and (max-width: 1024px) {
         display: none;

@@ -1,0 +1,24 @@
+// Чтобы использовать миксин в селекторе, используется ключевое слово @include
+
+@mixin offset {
+  position: relative;
+  left: 7px;
+}
+
+@mixin offset-gallery-grid-one {
+  position: relative;
+  left: 7px;
+  bottom: 2px;
+}
+
+@mixin offset-gallery-grid-two {
+  position: relative;
+  left: 7px;
+  bottom: 9px;
+}
+
+@mixin offset-gallery-grid-three {
+  position: relative;
+  left: 7px;
+  bottom: 15px;
+}
