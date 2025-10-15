@@ -1,5 +1,7 @@
 // Чтобы использовать миксин в селекторе, используется ключевое слово @include
 
+//смещение изображений для разрешения экрана 1920px
+
 @mixin offset {
   position: relative;
   left: 7px;
@@ -21,4 +23,11 @@
   position: relative;
   left: 7px;
   bottom: 15px;
+}
+
+//смещение изображений для разрешения экрана 1024px
+
+@mixin offset-gallery-1024px {
+  position: relative;
+  bottom: 24px;
 }
