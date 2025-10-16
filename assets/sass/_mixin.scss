@@ -7,20 +7,20 @@
 
 //смещение изображений для разрешения экрана 1920px
 
-@mixin offset-gallery-grid-one {
+@mixin offset-gallery-grid-one-1920px {
   position: relative;
   left: 7px;
   height: 98%;
 }
 
-@mixin offset-gallery-grid-two {
+@mixin offset-gallery-grid-two-1920px {
   position: relative;
   left: 7px;
   bottom: 6px;
   height: 98%;
 }
 
-@mixin offset-gallery-grid-three {
+@mixin offset-gallery-grid-three-1920px {
   position: relative;
   left: 7px;
   bottom: 13px;
@@ -31,20 +31,20 @@
 
 @mixin offset-gallery-grid-one-1024px {
   position: relative;
-  bottom: 24px;
-  height: 109%;
+  bottom: 23px;
+  height: 136%;
 }
 
 @mixin offset-gallery-grid-two-1024px {
   position: relative;
-  top: 5px;
-  height: 109%;
+  top: 58px;
+  height: 136%;
 }
 
 @mixin offset-gallery-grid-three-1024px {
   position: relative;
-  top: 28px;
-  height: 109%;
+  top: 137px;
+  height: 136%;
 }
 
 //смещение изображений для разрешения экрана 360px
