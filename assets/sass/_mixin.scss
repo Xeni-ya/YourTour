@@ -1,33 +1,73 @@
 // Чтобы использовать миксин в селекторе, используется ключевое слово @include
 
-//смещение изображений для разрешения экрана 1920px
-
 @mixin offset {
   position: relative;
   left: 7px;
 }
 
+//смещение изображений для разрешения экрана 1920px
+
 @mixin offset-gallery-grid-one {
   position: relative;
   left: 7px;
-  bottom: 2px;
+  height: 98%;
 }
 
 @mixin offset-gallery-grid-two {
   position: relative;
   left: 7px;
-  bottom: 9px;
+  bottom: 6px;
+  height: 98%;
 }
 
 @mixin offset-gallery-grid-three {
   position: relative;
   left: 7px;
-  bottom: 15px;
+  bottom: 13px;
+  height: 98%;
 }
 
 //смещение изображений для разрешения экрана 1024px
 
-@mixin offset-gallery-1024px {
+@mixin offset-gallery-grid-one-1024px {
   position: relative;
   bottom: 24px;
+  height: 109%;
+}
+
+@mixin offset-gallery-grid-two-1024px {
+  position: relative;
+  top: 5px;
+  height: 109%;
+}
+
+@mixin offset-gallery-grid-three-1024px {
+  position: relative;
+  top: 28px;
+  height: 109%;
+}
+
+//смещение изображений для разрешения экрана 360px
+
+@mixin offset-gallery-grid-one-360px {
+  position: relative;
+  bottom: 21px;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin offset-gallery-grid-two-360px {
+  position: relative;
+  top: -22px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin offset-gallery-grid-three-360px {
+  position: relative;
+  top: -22px;
+  left: 9px;
+  width: 100%;
+  height: 100%;
 }
