@@ -5,6 +5,11 @@
   left: 7px;
 }
 
+@mixin resetting-offset {
+  position: relative;
+  left: 0px;
+}
+
 //смещение изображений для разрешения экрана 1920px
 
 @mixin offset-gallery-grid-one-1920px {
@@ -51,7 +56,7 @@
 
 @mixin offset-gallery-grid-one-360px {
   position: relative;
-  bottom: 21px;
+  bottom: 22px;
   width: 100%;
   height: 100%;
 }
