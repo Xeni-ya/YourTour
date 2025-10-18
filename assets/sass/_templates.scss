@@ -155,14 +155,18 @@ a {
 
 %container {
   max-width: 1198px; // 1170px
-  min-width: 320px; // 318px
+  min-width: 305px;
   margin: 0 auto;
   padding: 0 14px;
+
+  @media screen and (max-width: 360px) {
+    width: 100%;
+  }
 }
 
 %gallery-container {
   max-width: 1966px; // 1920px
-  min-width: 320px;
+  min-width: 305px;
   margin: 0 auto;
   padding: 0 23px;
 
