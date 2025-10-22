@@ -21,13 +21,25 @@
         @include offset;
       }
 
+      @media screen and (max-width: 520px) {
+        font-size: 3rem; //48px
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 2.5rem; //40px
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 2.125rem; //34px
+      }
+
       @media screen and (max-width: 360px) {
         margin-top: 75px;
         left: 8px;
       }
 
       @media screen and (max-width: 320px) {
-        @include resetting-offset;
+        font-size: 1.875rem; //30px
       }
     }
 
@@ -39,14 +51,10 @@
       position: relative;
       top: 3px;
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 375px) {
         margin: 20px 0 50px 0;
-        font-size: 1rem;
+        //font-size: 1rem;
         top: 4px;
-      }
-
-      @media screen and (max-width: 320px) {
-        @include resetting-offset;
       }
     }
   }
@@ -61,11 +69,30 @@
     grid-template-rows: repeat(9, 1fr);
     gap: 30px;
 
+    @media screen and (max-width: 1156px) {
+      gap: 25px;
+    }
+
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(9, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 30px;
+    }
+
+    @media screen and (max-width: 815px) {
+      grid-column-gap: 15px;
+      grid-row-gap: 25px;
+    }
+
+    @media screen and (max-width: 715px) {
+      grid-column-gap: 15px;
+      grid-row-gap: 20px;
+    }
+
+    @media screen and (max-width: 570px) {
+      grid-column-gap: 15px;
+      grid-row-gap: 5px;
     }
 
     @media screen and (max-width: 425px) {
@@ -89,6 +116,18 @@
       object-position: center;
       border-radius: 50px;
       overflow: hidden;
+
+      @media screen and (max-width: 815px) {
+        border-radius: 45px;
+      }
+
+      @media screen and (max-width: 715px) {
+        border-radius: 40px;
+      }
+
+      @media screen and (max-width: 570px) {
+        border-radius: 35px;
+      }
 
       @media screen and (max-width: 425px) {
         border-radius: 20px;
