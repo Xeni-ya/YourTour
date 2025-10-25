@@ -14,42 +14,42 @@
 
 @mixin offset-gallery-grid-one-1920px {
   position: relative;
-  left: 7px;
-  height: 98%;
+  left: 8px;
+  height: 100%;
 }
 
 @mixin offset-gallery-grid-two-1920px {
   position: relative;
   left: 7px;
-  bottom: 6px;
-  height: 98%;
+  top: 3px;
+  height: 100%;
 }
 
 @mixin offset-gallery-grid-three-1920px {
   position: relative;
   left: 7px;
-  bottom: 13px;
-  height: 98%;
+  top: 2px;
+  height: 100%;
 }
 
 //смещение изображений для разрешения экрана 1024px
 
 @mixin offset-gallery-grid-one-1024px {
   position: relative;
-  bottom: 23px;
-  height: 136%;
+  bottom: 22px;
+  height: 140%;
 }
 
 @mixin offset-gallery-grid-two-1024px {
   position: relative;
-  top: 58px;
-  height: 136%;
+  top: 64px;
+  height: 141%;
 }
 
 @mixin offset-gallery-grid-three-1024px {
   position: relative;
-  top: 137px;
-  height: 136%;
+  top: 152px;
+  height: 140%;
 }
 
 //смещение изображений для разрешения экрана 360px
@@ -58,21 +58,28 @@
   position: relative;
   bottom: 22px;
   width: 100%;
-  height: 100%;
+  height: 106%;
 }
 
 @mixin offset-gallery-grid-two-360px {
   position: relative;
-  top: -22px;
-  left: 6px;
+  top: -16px;
   width: 100%;
-  height: 100%;
+  height: 106%;
 }
 
 @mixin offset-gallery-grid-three-360px {
   position: relative;
-  top: -22px;
+  top: -16px;
   left: 9px;
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 106%;
+}
+
+@mixin offset-gallery-grid-four-360px {
+  position: relative;
+  top: -10px;
+  width: 101%;
+  height: 107%;
+  left: 5px;
 }
