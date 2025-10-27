@@ -219,12 +219,12 @@
       grid-column: 1/5;
 
       @include offset-gallery-grid-two-1920px;
+      object-fit: cover;
 
       @media screen and (max-width: 1024px) {
         grid-area: 4 / 1 / 7 / 4;
 
         @include offset-gallery-grid-two-1024px;
-        object-fit: cover;
       }
 
       @media screen and (max-width: 425px) {
@@ -240,6 +240,7 @@
       grid-column: 5/9;
 
       @include offset-gallery-grid-two-1920px;
+      object-fit: cover;
 
       @media screen and (max-width: 1024px) {
         grid-area: 4 / 4 / 7 / 7;
@@ -258,6 +259,7 @@
       grid-column: 9/13;
 
       @include offset-gallery-grid-two-1920px;
+      object-fit: cover;
 
       @media screen and (max-width: 1024px) {
         display: none;
@@ -319,6 +321,7 @@
         grid-area: 5 / 1 / 7 / 4;
 
         @include offset-gallery-grid-four-360px;
+        object-fit: inherit;
       }
     }
 
