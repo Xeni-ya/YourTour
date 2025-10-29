@@ -126,6 +126,10 @@
         height: 1360px;
       }
 
+      @media screen and (max-width: 450px) {
+        padding: 40px 30px;
+        gap: 25px;
+      }
 
       @media screen and (max-width: 360px) {
         display: flex;
