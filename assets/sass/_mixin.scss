@@ -10,6 +10,16 @@
   left: 0px;
 }
 
+@mixin span-offset {
+  position: relative;
+  top: 4px;
+}
+
+@mixin input-offset {
+  position: relative;
+  bottom: -13px;
+}
+
 //смещение изображений для разрешения экрана 1920px
 
 @mixin offset-gallery-grid-one-1920px {

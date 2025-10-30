@@ -45,6 +45,7 @@ a {
 .page-title {
   font-weight: 700;
   font-size: 6rem; // 96px
+  //font-size: clamp(2.125rem, 9.5vw, 6rem); // 34px - 96px
   line-height: 1.09;
   letter-spacing: 0.02em;
   text-align: center;
@@ -70,16 +71,20 @@ a {
 
 .title {
   font-weight: 700;
-  font-size: 3.6875rem; // 59px
+  font-size: clamp(2.125rem, 3.5vw + 1.5rem, 3.6875rem); // 34px - 59px
   line-height: 1.24;
   text-align: center;
   color: $black;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 1024px) {
+    font-size: 3.6875rem; // 59px
+  }
+
+  /*   @media screen and (max-width: 425px) {
     font-size: 2.25rem; // 36px
     line-height: 1.12;
     letter-spacing: 0.02em;
-  }
+  } */
 
   @media screen and (max-width: 360px) {
     font-size: 2.125rem; // 34px
@@ -90,9 +95,13 @@ a {
 
 .subtitle {
   font-weight: 500;
-  font-size: 2.1875rem; // 35px
+  font-size: clamp(1.4375rem, 1.2vw + 1.1rem, 2.1875rem); // 23px - 35px
   line-height: 1.22;
   color: $black;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.1875rem; // 35px
+  }
 
   @media screen and (max-width: 360px) {
     font-size: 1.4375rem; // 23px
