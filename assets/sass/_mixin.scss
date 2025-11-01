@@ -10,6 +10,8 @@
   left: 0px;
 }
 
+// смещение элементов формы
+
 @mixin span-offset {
   position: relative;
   top: 4px;
@@ -93,4 +95,11 @@
   width: 101%;
   height: 107%;
   left: 5px;
+}
+
+//стилизация элементов секций 
+
+@mixin stylization-description {
+  margin: 30px 0 100px 0;
+  text-align: center;
 }
