@@ -22,6 +22,7 @@
 
     .section-stories__holder {
       @include offset;
+      top: 2px;
       border-radius: 50px;
       overflow: hidden;
 
@@ -35,7 +36,7 @@
       margin-top: 50px;
 
       display: flex;
-      flex-wrap: nowrap;
+      flex-direction: column;
       justify-content: space-between;
 
       // фон с картинкой и анимация
@@ -77,7 +78,6 @@
       }
 
       .section-stories__wrapper {
-        width: 50%;
         display: flex;
         flex-direction: column;
         z-index: 15;
@@ -88,12 +88,16 @@
 
         .section-stories__inner {
           margin-top: 37px;
+          max-width: 560px;
 
           .section-stories__text {}
 
           .section-stories__list {
-            list-style-type: circle;
+            list-style-type: disc;
             margin-top: 30px;
+            position: relative;
+            left: 30px;
+            bottom: 3px;
 
             .section-stories__item {}
           }
@@ -101,9 +105,7 @@
 
         .section-stories__more {
           display: flex;
-          align-content: center;
           gap: 15px;
-          margin-top: 115px;
 
           &:hover {
             border-radius: 50px;
@@ -146,8 +148,19 @@
         }
 
         .section-stories__socials {
+          display: flex;
+          justify-content: space-between;
+
           .section-stories__items {
-            .section-stories__item {}
+            display: flex;
+            gap: 35px;
+            position: relative;
+            right: 1px;
+
+            .section-stories__item:nth-child(3) {
+              position: relative;
+              left: 1px;
+            }
           }
         }
       }
