@@ -24,7 +24,7 @@
       @include stylization-description;
       color: $gray-300;
       @include offset;
-      top: 3px;
+      top: 1px;
 
       @media screen and (max-width: 360px) {
         margin: 20px 0 50px 0;
@@ -53,7 +53,12 @@
 
       @media screen and (max-width: 1024px) {
         max-width: 918px;
-        left: 40px;
+        left: 39px;
+        top: 0;
+      }
+
+      @media screen and (max-width: 912px) {
+        left: 7px;
       }
 
       @media screen and (max-width: 360px) {
@@ -63,7 +68,18 @@
         @include offset;
         padding: 30px 25px 0 30px;
         margin-top: 20px;
+        top: 2px;
       }
+
+      /* 
+      .section-stories__holder:nth-child(2) {
+        @media screen and (max-width: 1024px) {
+
+          left: 40px;
+          top: 2px;
+          ;
+        }
+      } */
 
       // фон с картинкой и анимация
       &::before {
@@ -102,10 +118,14 @@
           .section-stories__text {
             @media screen and (max-width: 1024px) {
               position: relative;
-              top: -3px;
+              top: 0;
             }
 
-            @media screen and (max-width: 360px) {
+            @media screen and (max-width: 543px) {
+              font-size: 1.125rem; //18px
+            }
+
+            @media screen and (max-width: 512px) {
               font-size: 1rem;
               top: -15px;
             }
@@ -118,11 +138,11 @@
             left: 30px;
             bottom: 3px;
 
-            @media screen and (max-width: 1024px) {
-              bottom: 5px;
+            @media screen and (max-width: 543px) {
+              font-size: 1.125rem; //18px
             }
 
-            @media screen and (max-width: 360px) {
+            @media screen and (max-width: 512px) {
               font-size: 1rem;
               top: -21px;
               left: 24px;
@@ -185,7 +205,7 @@
             top: -1px;
           }
 
-          @media screen and (max-width: 1024px) {
+          @media screen and (max-width: 360px) {
             top: -31px;
           }
 
@@ -194,13 +214,14 @@
             gap: 35px;
             position: relative;
             right: 1px;
+            top: 1px;
 
             .section-stories__item:nth-child(3) {
               position: relative;
               left: 1px;
             }
 
-            @media screen and (max-width: 360px) {
+            @media screen and (max-width: 689px) {
               display: none;
             }
           }
