@@ -83,8 +83,8 @@
         top: 0;
       }
 
-      @media screen and (max-width: 988px) {
-        left: 7px;
+      @media screen and (max-width: 1023px) {
+        left: clamp(7px, 2vw, 39px);
       }
 
       @media screen and (max-width: 360px) {
@@ -96,16 +96,6 @@
         margin-top: 20px;
         top: 2px;
       }
-
-      /* 
-      .section-stories__holder:nth-child(2) {
-        @media screen and (max-width: 1024px) {
-
-          left: 40px;
-          top: 2px;
-          ;
-        }
-      } */
 
       // фон с картинкой и анимация
       &::before {
@@ -173,8 +163,6 @@
               top: -21px;
               left: 24px;
             }
-
-            .section-stories__item {}
           }
         }
 
