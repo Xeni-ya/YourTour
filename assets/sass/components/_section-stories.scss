@@ -15,8 +15,30 @@
         margin-top: 375px;
       }
 
+      @media screen and (max-width: 540px) {
+        margin-top: 340px;
+      }
+
+      @media screen and (max-width: 520px) {
+        font-size: 3rem; //48px
+        margin-top: 275px;
+      }
+
+      @media screen and (max-width: 425px) {
+        margin-top: 135px;
+        font-size: 2.5rem; //40px
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 2.125rem; //34px
+      }
+
       @media screen and (max-width: 360px) {
         margin-top: 72px;
+      }
+
+      @media screen and (max-width: 320px) {
+        font-size: 1.875rem; //30px
       }
     }
 
@@ -26,7 +48,11 @@
       @include offset;
       top: 1px;
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 425px) {
+        font-size: 1.125rem;
+      }
+
+      @media screen and (max-width: 375px) {
         margin: 20px 0 50px 0;
         font-size: 1rem;
       }
@@ -57,7 +83,7 @@
         top: 0;
       }
 
-      @media screen and (max-width: 912px) {
+      @media screen and (max-width: 988px) {
         left: 7px;
       }
 
