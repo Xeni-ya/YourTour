@@ -1,0 +1,44 @@
+@use "../vars" as *;
+@use "../mixin" as *;
+@use "../templates";
+
+.section-action {
+  .container {
+    @extend %container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    margin-top: 135px;
+
+    .section-action__img {
+      border-radius: 50px;
+      max-width: 370px;
+      width: 100%;
+      height: 370px;
+    }
+
+    .section-action__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      max-width: 371px;
+      width: 100%;
+      height: 162px;
+
+      .section-action__subtitle {}
+
+      .section-action__description {
+        color: $gray-300;
+        font-style: normal;
+        margin-top: 20px;
+
+        & a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
