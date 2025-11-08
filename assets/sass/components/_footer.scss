@@ -1,0 +1,40 @@
+@use "../vars" as *;
+@use "../mixin" as *;
+@use "../templates";
+
+.footer {
+  background: $beige-200;
+  margin-top: 135px;
+
+  .container {
+    @extend %container;
+    width: 100%;
+    min-height: 88px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__text {
+      color: $gray-300;
+    }
+
+    .nav-social {
+      .nav-social__items {
+        display: flex;
+        gap: 25px;
+
+        .nav-social__item {
+
+          .nav-social__link {
+
+            .nav-social__icon {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
