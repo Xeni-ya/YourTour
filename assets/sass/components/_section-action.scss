@@ -12,8 +12,11 @@
     gap: 30px;
     margin-top: 135px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
       flex-direction: column;
+    }
+
+    @media screen and (max-width: 375px) {
       margin-top: 75px;
     }
 
@@ -53,15 +56,23 @@
         top: 0px;
       }
 
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+
       @media screen and (max-width: 375px) {
         margin-top: -20px;
         max-width: 310px;
       }
 
       .section-action__subtitle {
+        @media screen and (max-width: 379px) {
+          font-size: 1.875rem; //30px
+        }
+
         @media screen and (max-width: 375px) {
           font-weight: 700;
-          text-align: center;
+          font-size: 1.4375rem;
           top: 4px;
           left: 1px;
         }
@@ -81,9 +92,12 @@
           }
         }
 
+        @media screen and (max-width: 379px) {
+          font-size: 1.125rem; // 18px
+        }
+
         @media screen and (max-width: 375px) {
           font-size: 1rem;
-          text-align: center;
           margin-top: 25px;
         }
       }
