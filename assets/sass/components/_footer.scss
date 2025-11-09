@@ -6,6 +6,10 @@
   background: $beige-200;
   margin-top: 135px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 75px;
+  }
+
   .container {
     @extend %container;
     width: 100%;
@@ -17,9 +21,31 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 1024px) {
+      padding: 0 46px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 1rem;
+      padding: 0;
+    }
+
     .footer__text {
       color: $gray-300;
       @include holder-offset;
+      left: 1px;
+
+      @media screen and (max-width: 1024px) {
+        top: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-top: 21px;
+      }
     }
 
     .nav-social {
@@ -29,18 +55,40 @@
         display: flex;
         gap: 25px;
 
+        @media screen and (max-width: 375px) {
+          gap: 15px;
+        }
+
         .nav-social__item {
           align-items: center;
           position: relative;
 
           &:nth-child(1) {
             top: 5px;
+
+            @media screen and (max-width: 1024px) {
+              left: 2px;
+              top: 2px;
+            }
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            @media screen and (max-width: 1024px) {
+              bottom: 3px;
+              left: 1px;
+            }
           }
 
           .nav-social__link {
             .nav-social__icon {
               margin-right: 6px;
               position: relative;
+
+              @media screen and (max-width: 375px) {
+                margin-right: 5px;
+              }
+
             }
           }
         }
@@ -48,6 +96,10 @@
 
       #tg {
         right: 2px;
+
+        @media screen and (max-width: 1024px) {
+          top: 2px;
+        }
       }
 
       #fb,
