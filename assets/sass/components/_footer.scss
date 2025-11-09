@@ -10,6 +10,7 @@
     @extend %container;
     width: 100%;
     min-height: 88px;
+    @include offset;
 
     display: flex;
     flex-wrap: wrap;
@@ -18,22 +19,41 @@
 
     .footer__text {
       color: $gray-300;
+      @include holder-offset;
     }
 
     .nav-social {
+      position: relative;
+
       .nav-social__items {
         display: flex;
         gap: 25px;
 
         .nav-social__item {
+          align-items: center;
+          position: relative;
+
+          &:nth-child(1) {
+            top: 5px;
+          }
 
           .nav-social__link {
-
             .nav-social__icon {
-              margin-right: 10px;
+              margin-right: 6px;
+              position: relative;
             }
           }
         }
+      }
+
+      #tg {
+        right: 2px;
+      }
+
+      #fb,
+      #vk {
+        left: 1px;
+        top: 6px;
       }
     }
   }
