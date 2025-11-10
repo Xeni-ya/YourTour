@@ -7,7 +7,7 @@
   margin-top: 135px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 75px;
+    margin-top: 57px;
   }
 
   .container {
@@ -27,6 +27,7 @@
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
+      //margin-top: 21px;
     }
 
     @media screen and (max-width: 375px) {
@@ -44,7 +45,7 @@
       }
 
       @media screen and (max-width: 768px) {
-        margin-top: 21px;
+        top: 22px;
       }
     }
 
@@ -64,11 +65,14 @@
           position: relative;
 
           &:nth-child(1) {
-            top: 5px;
-
             @media screen and (max-width: 1024px) {
+              bottom: 3px;
               left: 2px;
-              top: 2px;
+            }
+
+            @media screen and (max-width: 375px) {
+              bottom: 12px;
+              left: 3px;
             }
           }
 
@@ -77,6 +81,20 @@
             @media screen and (max-width: 1024px) {
               bottom: 3px;
               left: 1px;
+            }
+          }
+
+          &:nth-child(2) {
+            @media screen and (max-width: 375px) {
+              bottom: 11px;
+              left: -1px;
+            }
+          }
+
+          &:nth-child(3) {
+            @media screen and (max-width: 375px) {
+              bottom: 12px;
+              left: -10px;
             }
           }
 
@@ -94,19 +112,36 @@
         }
       }
 
-      #tg {
-        right: 2px;
-
-        @media screen and (max-width: 1024px) {
-          top: 2px;
-        }
-      }
-
+      #tg,
       #fb,
       #vk {
         left: 1px;
         top: 6px;
       }
+
+      #tg {
+        @media screen and (max-width: 1024px) {
+          top: 2px;
+        }
+
+        @media screen and (max-width: 360px) {
+          left: 6px;
+          top: 6px;
+        }
+      }
+
+      #fb {
+        @media screen and (max-width: 360px) {
+          left: 5px;
+        }
+      }
+
+      #vk {
+        @media screen and (max-width: 360px) {
+          left: 6px;
+        }
+      }
+
     }
   }
 }
