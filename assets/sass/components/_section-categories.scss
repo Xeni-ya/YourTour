@@ -110,9 +110,7 @@
 
             &.nav-tabs__item_active {
               color: $orange-200;
-              text-decoration: underline; //обычное подчёркивание
-              text-decoration-thickness: 2px; // задаёт толщину линии
-              text-underline-offset: 9px; // смещаем подчёркивание вниз 
+              @include underscore-sctn-categories;
 
               @media screen and (max-width: 1024px) {
                 text-underline-offset: 10px;
@@ -121,6 +119,10 @@
               @media screen and (max-width: 360px) {
                 text-underline-offset: 3px;
               }
+            }
+
+            &:hover {
+              @include underscore-sctn-categories;
             }
 
             .nav-tabs__link {
