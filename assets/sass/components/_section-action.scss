@@ -86,6 +86,10 @@
         & a {
           color: $black;
 
+          &:hover {
+            @include underscore;
+          }
+
           @media screen and (max-width: 375px) {
             position: relative;
             left: 3px;
