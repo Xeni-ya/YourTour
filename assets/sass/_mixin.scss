@@ -139,3 +139,10 @@
   width: 100%;
   height: 100%;
 }
+
+// нижнее подчеркивние
+@mixin underscore {
+  text-decoration: underline; //обычное подчёркивание
+  text-decoration-thickness: 1px; // задаёт толщину линии
+  text-underline-offset: 6px; // смещаем подчёркивание вниз
+}
