@@ -27,12 +27,15 @@
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
-      //margin-top: 21px;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 516px) {
       font-size: 1rem;
       padding: 0;
+    }
+
+    @media screen and (max-width: 350px) {
+      @include resetting-offset;
     }
 
     .footer__text {
@@ -55,6 +58,10 @@
       .nav-social__items {
         display: flex;
         gap: 25px;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 8.5px;
+        }
 
         @media screen and (max-width: 375px) {
           gap: 15px;
@@ -98,7 +105,24 @@
             }
           }
 
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            @media screen and (max-width: 350px) {
+              bottom: 0;
+              left: 0;
+            }
+          }
+
           .nav-social__link {
+            &:hover {
+              @include underscore;
+            }
+
+            @media screen and (max-width: 349px) {
+              display: flex;
+            }
+
             .nav-social__icon {
               margin-right: 6px;
               position: relative;
@@ -107,6 +131,9 @@
                 margin-right: 5px;
               }
 
+              @media screen and (max-width: 350px) {
+                width: 20%;
+              }
             }
           }
         }
