@@ -100,9 +100,7 @@
           width: 80px;
           height: 0px;
           color: $white;
-          text-decoration: underline; //обычное подчёркивание
-          text-decoration-thickness: 1px; // задаёт толщину линии
-          text-underline-offset: 6px; // смещаем подчёркивание вниз
+          @include underscore;
         }
       }
 
