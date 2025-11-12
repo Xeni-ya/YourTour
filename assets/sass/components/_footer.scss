@@ -55,7 +55,7 @@
       position: relative;
       left: 6px;
 
-      @media screen and (max-width: 356px) {
+      @media screen and (max-width: 358px) {
         left: 0;
       }
 
@@ -145,7 +145,11 @@
         top: 6px;
 
         @media screen and (max-width: 349px) {
-          top: 0px;
+          top: -2px;
+        }
+
+        @media screen and (max-width: 334px) {
+          top: 0;
         }
       }
 
