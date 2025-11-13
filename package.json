@@ -1,5 +1,28 @@
 {
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "name": "yourtour",
+  "version": "1.0.0",
+  "description": "Необходимо сверстать главную страницу сайта на основе предоставленного макета в Figma. Задание направлено на отработку навыков верстки **без использования JavaScript**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xeni-ya/YourTour.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xeni-ya/YourTour/issues"
+  },
+  "homepage": "https://github.com/Xeni-ya/YourTour#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
   }
 }
