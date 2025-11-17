@@ -29,6 +29,12 @@
   bottom: -13px;
 }
 
+//смещение элементов хедера 
+@mixin header-offset {
+  position: relative;
+  left: 15px;
+}
+
 //смещение изображений для разрешения экрана 1920px
 
 @mixin offset-gallery-grid-one-1920px {
