@@ -51,8 +51,7 @@
     }
 
     .header__logo>svg {
-      position: relative;
-      left: 15px;
+      @include header-offset;
 
       width: 100%;
       max-width: 182px;
@@ -75,7 +74,7 @@
         max-width: 137px; // 133px
         height: 23px; // 22px
         left: -2px;
-        top: -1px;
+        top: 0px;
       }
     }
 
@@ -126,12 +125,13 @@
     }
 
     .header__contacts-phone {
-      padding-bottom: 9px;
+      position: relative;
+      bottom: 4px;
+      font-style: normal;
 
       @media screen and (max-width: 360px) {
         font-size: 1rem;
-        margin-right: -15px;
-        margin-top: 0px;
+        @include header-offset;
       }
     }
 
