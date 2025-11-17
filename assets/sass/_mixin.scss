@@ -12,6 +12,11 @@
   left: 0px;
 }
 
+@mixin offset-navbar-link-8px {
+  position: relative;
+  left: 8px;
+}
+
 // смещение элементов формы
 
 @mixin span-offset {
