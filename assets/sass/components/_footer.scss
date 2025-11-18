@@ -39,8 +39,8 @@
 
     .footer__text {
       color: $gray-300;
-      left: 1px;
       @include offset;
+      top: 2px;
 
       @media screen and (max-width: 1024px) {
         top: 0;
