@@ -251,6 +251,7 @@
               border-radius: 100px;
               width: 75px;
               height: 75px;
+              position: relative;
 
               @media screen and (max-width: 746px) {
                 width: 65px;
@@ -316,6 +317,36 @@
                 @media screen and (max-width: 360px) {
                   letter-spacing: -0.01em;
                 }
+              }
+            }
+
+            #woman {
+              @media screen and (max-width: 1920px) {
+                top: 3px;
+              }
+
+              @media screen and (max-width: 1024px) {
+                left: 0px;
+                top: 0px;
+              }
+
+              @media screen and (max-width: 375px) {
+                left: 1px;
+              }
+            }
+
+            #man {
+              @media screen and (max-width: 1920px) {
+                top: 2px;
+              }
+
+              @media screen and (max-width: 1024px) {
+                top: -1px;
+              }
+
+              @media screen and (max-width: 375px) {
+                left: 1px;
+                top: -1px;
               }
             }
           }
