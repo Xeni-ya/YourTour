@@ -53,7 +53,14 @@
 @mixin offset-gallery-grid-three-1920px {
   position: relative;
   left: 7px;
-  top: 2px;
+  top: 1px;
+  height: 100%;
+}
+
+@mixin offset-gallery-grid-four-1920px {
+  position: relative;
+  left: 7px;
+  top: 0px;
   height: 100%;
 }
 
