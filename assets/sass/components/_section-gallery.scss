@@ -277,7 +277,7 @@
     .section-gallery__image:nth-child(9) {
       grid-area: 7 / 1 / 10 / 6;
 
-      @include offset-gallery-grid-three-1920px;
+      @include offset-gallery-grid-four-1920px;
 
       @media screen and (max-width: 1024px) {
         grid-area: 7 / 1 / 10 / 5;
@@ -334,7 +334,7 @@
     .section-gallery__image:nth-child(12) {
       grid-area: 7 / 16 / 10 / 21;
 
-      @include offset-gallery-grid-three-1920px;
+      @include offset-gallery-grid-four-1920px;
 
       @media screen and (max-width: 1024px) {
         display: none;
