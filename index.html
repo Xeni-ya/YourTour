@@ -202,12 +202,12 @@
         <p class="section-form__description">
           Идейные соображения высшего порядка, <br> а также рамки и место обучения кадров
         </p>
-        <form class="section-form__form" action="#" method="post" name="form">
+        <form class="section-form__form" action="#" method="post" name="tourCreationForm">
           <div class="name">
             <label for="name" accesskey="W" tabindex="0">Имя</label><br />
             <input type="text" placeholder="Введите Ваше имя" title="Только буквы, без цифр и пробелов" name="name"
               id="name" accesskey="W" tabindex="1" minlength="2" maxlength="50" required
-              pattern="^[a-zA-Zа-яА-ЯёЁ]+(?: [a-zA-Zа-яА-ЯёЁ]+)*$" />
+              pattern="[a-zA-Zа-яА-ЯёЁ]+(?:\s+[a-zA-Zа-яА-ЯёЁ]+)*" />
           </div>
           <div class="direction">
             <label for="city-select" accesskey="D" tabindex="2">Направление</label><br />
@@ -222,8 +222,7 @@
           <div class="email">
             <label for="userEmail" accesskey="S" tabindex="9">Email</label><br />
             <input type="email" placeholder="example@mail.com" title="example@mail.com" name="email" id="userEmail"
-              accesskey="S" tabindex="10" required
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ или ^[\w.-]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,}$" />
+              accesskey="S" tabindex="10" required />
           </div>
           <div class="phone">
             <label for="tel" accesskey="A" tabindex="11">Телефон</label><br />
@@ -234,8 +233,7 @@
           <div class="date-from">
             <label for="start" accesskey="T" tabindex="13">Дата от</label><br />
             <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-start"
-              id="start" accesskey="T" tabindex="14" required
-              pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)" />
+              id="start" accesskey="T" tabindex="14" required />
           </div>
           <div class="date-before">
             <label for="end" accesskey="H" tabindex="15">Дата до</label><br />
@@ -246,24 +244,26 @@
           <div class="comment">
             <label for="comment" accesskey="G" tabindex="17">Комментарий</label><br />
             <textarea cols="40" rows="3" name="textArea" id="comment" minlength="5" maxlength="140" accesskey="G"
-              tabindex="18" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$"></textarea>
+              tabindex="18" pattern="^[\w\s\p{P}]+$"></textarea>
           </div>
           <div class="age">
             <label for="age" accesskey="F" tabindex="19">Вам есть 18 лет?</label><br />
             <input type="radio" name="age" value="yes" id="age_yes" accesskey="Y" tabindex="20" required>
             <span class="age__radio-yes">Да</span>
-            <input type="radio" name="age" value="no" id="age_no" accesskey="N" tabindex="21" required>
+            <input type="radio" name="age" value="no" id="age_no" accesskey="N" tabindex="21">
             <span class="age__radio-no">Нет</span>
           </div>
           <div class="agreement">
-            <input type="checkbox" name="checkbox" id="checkbox" accesskey="Z" tabindex="22" required />
-            <span>
-              Нажимая кнопку, я принимаю условия <a href="./assets/pages/license-agreement.html"
-                class="license-agreement">Лицензионного договора</a>
-            </span>
+            <label>
+              <input type="checkbox" name="checkbox" id="checkbox" accesskey="Z" tabindex="22" required />
+              <span>
+                Нажимая кнопку, я принимаю условия <a href="./assets/pages/license-agreement.html"
+                  class="license-agreement">Лицензионного договора</a>
+              </span>
+            </label>
           </div>
           <div class="buttons">
-            <button type="submit" accesskey="S" tabindex="23" class="find">Найти тур</button>
+            <button type="submit" accesskey="S" tabindex="23" class="find" onclick="ChekAll()">Найти тур</button>
             <button type="reset" accesskey="R" tabindex="24" class="reset">Сбросить</button>
           </div>
         </form>
@@ -530,6 +530,7 @@
   </footer>
 
   <!-- <script src="./assets/scripts/_header.js"></script> -->
+  <!-- <script src="./assets/scripts/_validation.js"></script> -->
 </body>
 
 </html>
