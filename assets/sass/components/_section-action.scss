@@ -87,7 +87,12 @@
           color: $black;
 
           &:hover {
-            @include underscore;
+            @include underscore-btn;
+          }
+
+          &:active {
+            @include underscore-btn;
+            color: $green-400;
           }
 
           @media screen and (max-width: 375px) {

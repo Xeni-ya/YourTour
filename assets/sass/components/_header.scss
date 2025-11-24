@@ -129,6 +129,10 @@
       bottom: 4px;
       font-style: normal;
 
+      &:hover {
+        @include underscore;
+      }
+
       @media screen and (max-width: 360px) {
         font-size: 1rem;
         @include header-offset;
