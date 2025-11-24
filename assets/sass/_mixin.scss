@@ -170,3 +170,17 @@
   text-decoration-thickness: 2px; // задаёт толщину линии
   text-underline-offset: 9px; // смещаем подчёркивание вниз 
 }
+
+@mixin underscore-btn {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+// кнопки
+
+@mixin more-btn {
+  border-radius: 50px;
+  padding: 7px 20px;
+  width: 199px;
+  height: 42px;
+}

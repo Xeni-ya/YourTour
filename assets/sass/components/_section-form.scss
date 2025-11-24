@@ -342,6 +342,7 @@
           left: 3px;
           accent-color: $white;
 
+
           @media screen and (max-width: 1024px) {
             margin: 33px 11px 0 0;
           }
@@ -361,6 +362,15 @@
 
         .license-agreement {
           color: $black;
+        }
+
+        .license-agreement:hover {
+          @include underscore-btn;
+        }
+
+        .license-agreement:active {
+          @include underscore-btn;
+          color: $green-400;
         }
       }
 

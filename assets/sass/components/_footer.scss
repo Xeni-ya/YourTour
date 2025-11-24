@@ -115,7 +115,12 @@
 
           .nav-social__link {
             &:hover {
-              @include underscore;
+              @include underscore-btn;
+            }
+
+            &:active {
+              @include underscore-btn;
+              color: $orange-200;
             }
 
             @media screen and (max-width: 349px) {
