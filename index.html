@@ -204,58 +204,58 @@
         </p>
         <form class="section-form__form" action="#" method="post" name="tourCreationForm">
           <div class="name">
-            <label for="name" accesskey="W" tabindex="0">Имя</label><br />
+            <label for="name">Имя</label><br />
             <input type="text" placeholder="Введите Ваше имя" title="Только буквы, без цифр и пробелов" name="name"
-              id="name" accesskey="W" tabindex="1" minlength="2" maxlength="50" required
-              pattern="[a-zA-Zа-яА-ЯёЁ]+(?:\s+[a-zA-Zа-яА-ЯёЁ]+)*" />
+              id="name" minlength="2" maxlength="50" required pattern="[a-zA-Zа-яА-ЯёЁ]+(?:\s+[a-zA-Zа-яА-ЯёЁ]+)*"
+              title="Только буквы, можно использовать пробелы между словами" />
           </div>
           <div class="direction">
-            <label for="city-select" accesskey="D" tabindex="2">Направление</label><br />
-            <select name="city" id="city-select" accesskey="D" tabindex="3" required>
-              <option value="" accesskey="D" tabindex="4" class="placeholder-option">Куда хотите ехать</option>
-              <option value="petersburg" accesskey="D" tabindex="5">Санкт-Петербург</option>
-              <option value="samara" accesskey="D" tabindex="6">Самара</option>
-              <option value="perm" accesskey="D" tabindex="7">Пермь</option>
-              <option value="novosibirsk" accesskey="D" tabindex="8">Новосибирск</option>
+            <label for="city-select">Направление</label><br />
+            <select name="city" id="city-select" required>
+              <option value="" class="placeholder-option">Куда хотите ехать</option>
+              <option value="petersburg">Санкт-Петербург</option>
+              <option value="samara">Самара</option>
+              <option value="perm">Пермь</option>
+              <option value="novosibirsk">Новосибирск</option>
             </select>
           </div>
           <div class="email">
-            <label for="userEmail" accesskey="S" tabindex="9">Email</label><br />
+            <label for="userEmail">Email</label><br />
             <input type="email" placeholder="example@mail.com" title="example@mail.com" name="email" id="userEmail"
-              accesskey="S" tabindex="10" required />
+              required />
           </div>
           <div class="phone">
-            <label for="tel" accesskey="A" tabindex="11">Телефон</label><br />
-            <input type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" title="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
-              name="phone" id="tel" accesskey="A" tabindex="12" required
+            <label for="tel">Телефон</label><br />
+            <input type="tel" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+              title="Формат: + 7 ( _ _ _ ) _ _ _ - _ _ - _ _" name="phone" id="tel" required
               pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" />
           </div>
           <div class="date-from">
-            <label for="start" accesskey="T" tabindex="13">Дата от</label><br />
-            <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-start"
-              id="start" accesskey="T" tabindex="14" required />
+            <label for="start">Дата от</label><br />
+            <input type="date" title="Введите дату отправления" min="2025-11-25" max="2026-12-31" name="trip-start"
+              id="start" required />
           </div>
           <div class="date-before">
-            <label for="end" accesskey="H" tabindex="15">Дата до</label><br />
-            <input type="date" title="Введите дату отправления" min="2025-01-01" max="2026-12-31" name="trip-end"
-              id="end" accesskey="H" tabindex="16" required
+            <label for="end">Дата до</label><br />
+            <input type="date" title="Введите дату отправления" min="2025-01-25" max="2026-12-31" name="trip-end"
+              id="end" required
               pattern="(19|20)\d\d-((0[1-9]|1[012])-(0[1-9]|[12]\d)|(0[13-9]|1[012])-30|(0[13578]|1[02])-31)" />
           </div>
           <div class="comment">
-            <label for="comment" accesskey="G" tabindex="17">Комментарий</label><br />
-            <textarea cols="40" rows="3" name="textArea" id="comment" minlength="5" maxlength="140" accesskey="G"
-              tabindex="18" pattern="^[\w\s\p{P}]+$"></textarea>
+            <label for="comment">Комментарий</label><br />
+            <textarea cols="40" rows="3" name="textArea" id="comment" minlength="5" maxlength="140"
+              pattern="^[\w\s\p{P}]+$"></textarea>
           </div>
           <div class="age">
-            <label for="age" accesskey="F" tabindex="19">Вам есть 18 лет?</label><br />
-            <input type="radio" name="age" value="yes" id="age_yes" accesskey="Y" tabindex="20" required>
+            <label for="age">Вам есть 18 лет?</label><br />
+            <input type="radio" name="age" value="yes" id="age_yes" required>
             <span class="age__radio-yes">Да</span>
-            <input type="radio" name="age" value="no" id="age_no" accesskey="N" tabindex="21">
+            <input type="radio" name="age" value="no" id="age_no">
             <span class="age__radio-no">Нет</span>
           </div>
           <div class="agreement">
             <label>
-              <input type="checkbox" name="checkbox" id="checkbox" accesskey="Z" tabindex="22" required />
+              <input type="checkbox" name="checkbox" id="checkbox" required />
               <span>
                 Нажимая кнопку, я принимаю условия <a href="./assets/pages/license-agreement.html"
                   class="license-agreement">Лицензионного договора</a>
@@ -263,8 +263,8 @@
             </label>
           </div>
           <div class="buttons">
-            <button type="submit" accesskey="S" tabindex="23" class="find" onclick="ChekAll()">Найти тур</button>
-            <button type="reset" accesskey="R" tabindex="24" class="reset">Сбросить</button>
+            <button type="submit" class="find" onclick="ChekAll()">Найти тур</button>
+            <button type="reset" class="reset">Сбросить</button>
           </div>
         </form>
       </div>
