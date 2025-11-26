@@ -23,6 +23,7 @@ html {
 body {
   height: 100%;
   background-color: $beige-100;
+  user-select: none;
   //overflow-x: hidden;
 
   font-family: $font-family;

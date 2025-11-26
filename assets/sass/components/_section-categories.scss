@@ -318,8 +318,6 @@
               &:hover {
                 @include more-btn;
                 background: $green-400;
-                transform: translateX(-20px) translateY(5px);
-                align-self: flex-start;
               }
 
               &:active {
