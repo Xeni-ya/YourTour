@@ -1,11 +1,11 @@
 @use "../vars" as *;
+@use "../mixin" as *;
 @use "../templates";
 
 .section-hero {
   background-image: url('../../assets/imgs/header-img.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left;
 
   margin-top: -88px;
   padding: 207px 0 119px 0;
@@ -15,16 +15,18 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 1024px) {}
+  @media screen and (max-width: 1024px) {
+    background-position: center;
+  }
 
   @media screen and (max-width: 360px) {
     padding: 140px 0 52px 0;
+    background-size: cover;
   }
 
   .section-hero__wrap {
     @extend %container;
-    position: relative;
-    left: 7px;
+    @include offset;
 
     @media screen and (max-width: 360px) {
       width: 95%;
