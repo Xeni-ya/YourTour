@@ -56,6 +56,7 @@
 
         .nav-tabs__items {
           display: flex;
+          justify-content: center;
           gap: 30px;
           @include offset-navbar-link-8px;
           width: 93%;
