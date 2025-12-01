@@ -1,11 +1,10 @@
 @use "../vars" as *;
+@use "../mixin" as *;
 @use "../templates";
 
 .section-reviews {
   .container {
     @extend %container;
-    position: relative;
-    left: 7px;
 
     display: flex;
     flex-direction: column;
@@ -23,6 +22,7 @@
       left: 1px;
       max-width: 529px;
       width: 100%;
+      @include offset;
 
       @media screen and (max-width: 1024px) {
         top: -19px;
@@ -84,6 +84,7 @@
     }
 
     .section-reviews__description {
+      @include offset;
       text-align: center;
       color: $gray-300;
       margin: 30px 0 100px 0;
@@ -111,6 +112,7 @@
     }
 
     .section-reviews__list {
+      @include offset;
       display: flex;
       gap: 30px;
 
