@@ -3,6 +3,7 @@ const inputField = document.getElementById('tel');
 const maskOptions = {
   mask: '+7 (000) 000-00-00',
   lazy: false,
+  placeholderChar: ' _ ',
 }
 
 // eslint-disable-next-line no-unused-vars
