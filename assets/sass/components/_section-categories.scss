@@ -124,6 +124,7 @@
             .nav-tabs__link {
               position: relative;
               right: 8px;
+              top: -1px;
 
               @media screen and (max-width: 1024px) {
                 right: 9px;
@@ -131,6 +132,7 @@
 
               @media screen and (max-width: 360px) {
                 right: 10px;
+                top: 0;
               }
 
               &[href="#tab_02"] {
@@ -362,11 +364,12 @@
         }
 
         @media screen and (max-width: 1024px) {
-          bottom: 1px;
+          @include left-card-one-offset-1024px;
         }
 
         @media screen and (max-width: 360px) {
           bottom: 62px;
+          left: 0;
         }
       }
 
@@ -380,11 +383,12 @@
         }
 
         @media screen and (max-width: 1024px) {
-          bottom: 1px;
+          @include right-card-two-offset-1024px;
         }
 
         @media screen and (max-width: 360px) {
           bottom: 74px;
+          left: 0;
         }
       }
 
@@ -401,11 +405,12 @@
         }
 
         @media screen and (max-width: 1024px) {
-          bottom: 13px;
+          @include left-card-tree-offset-1024px;
         }
 
         @media screen and (max-width: 360px) {
           bottom: 86px;
+          left: 0;
         }
       }
 
@@ -422,11 +427,12 @@
         }
 
         @media screen and (max-width: 1024px) {
-          bottom: 13px;
+          @include right-card-four-offset-1024px;
         }
 
         @media screen and (max-width: 360px) {
           bottom: 98px;
+          left: 0;
         }
       }
 
@@ -440,11 +446,12 @@
         }
 
         @media screen and (max-width: 1024px) {
-          bottom: 25px;
+          @include left-card-five-offset-1024px
         }
 
         @media screen and (max-width: 360px) {
           bottom: 110px;
+          left: 0;
         }
       }
 
@@ -461,11 +468,12 @@
         }
 
         @media screen and (max-width: 1024px) {
-          bottom: 25px;
+          @include right-card-six-offset-1024px;
         }
 
         @media screen and (max-width: 360px) {
           bottom: 122px;
+          left: 0;
         }
       }
     }

@@ -29,7 +29,40 @@
   bottom: -13px;
 }
 
-//смещение элементов хедера 
+// смещение карточек
+
+@mixin left-card-one-offset-1024px {
+  bottom: 1px;
+  left: 5px;
+}
+
+@mixin right-card-two-offset-1024px {
+  bottom: 1px;
+  left: -4px;
+}
+
+@mixin left-card-tree-offset-1024px {
+  bottom: 13px;
+  left: 5px;
+}
+
+@mixin right-card-four-offset-1024px {
+  bottom: 13px;
+  left: -4px;
+}
+
+@mixin left-card-five-offset-1024px {
+  bottom: 25px;
+  left: 5px;
+}
+
+@mixin right-card-six-offset-1024px {
+  bottom: 25px;
+  left: -4px;
+}
+
+//смещение элементов хедера
+
 @mixin header-offset {
   position: relative;
   left: 15px;
