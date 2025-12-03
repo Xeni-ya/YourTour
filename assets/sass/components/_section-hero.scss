@@ -26,13 +26,13 @@
 
   .section-hero__wrap {
     @extend %container;
-    @include offset;
 
     @media screen and (max-width: 360px) {
       width: 95%;
     }
 
     .section-hero__inner {
+      @include offset;
       width: 100%;
       max-width: 768px;
 
