@@ -115,6 +115,7 @@
       @include offset;
       display: flex;
       gap: 30px;
+      top: 3px;
 
       @media screen and (max-width: 1024px) {
         position: relative;
@@ -184,14 +185,6 @@
               font-size: 1.4375rem; // 23px;
               line-height: 1.22;
               color: $black;
-
-              position: relative;
-              top: 3px;
-              left: 1px;
-
-              @media screen and (max-width: 1024px) {
-                top: 0px;
-              }
 
               @media screen and (max-width: 912px) {
                 font-size: 1.3125rem; //21px
@@ -268,13 +261,7 @@
 
             .review-card__info {
               position: relative;
-              top: 3px;
               left: 1px;
-
-              @media screen and (max-width: 1024px) {
-                top: 0;
-                left: 1px;
-              }
 
               @media screen and (max-width: 360px) {
                 top: 9px;
@@ -327,15 +314,6 @@
             }
 
             #woman {
-              @media screen and (max-width: 1920px) {
-                top: 3px;
-              }
-
-              @media screen and (max-width: 1024px) {
-                left: 0px;
-                top: 0px;
-              }
-
               @media screen and (max-width: 375px) {
                 left: 1px;
               }
@@ -343,10 +321,6 @@
 
             #man {
               @media screen and (max-width: 1920px) {
-                top: 2px;
-              }
-
-              @media screen and (max-width: 1024px) {
                 top: -1px;
               }
 
