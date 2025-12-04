@@ -72,7 +72,7 @@
       padding: 70px;
       max-width: 1170px;
       width: 100%;
-      height: 986px;
+      max-height: 986px;
       background: $white;
 
       display: grid;
@@ -84,14 +84,14 @@
         "age age"
         "agreement agreement"
         "buttons buttons";
-      grid-template-rows: repeat(7, 1fr);
+      grid-template-rows: auto auto auto auto 1fr auto auto;
       gap: 33px 30px;
 
       @media screen and (max-width: 1024px) {
         padding: 60px;
         max-width: 918px;
         width: 100%;
-        height: 966px;
+        max-height: 966px;
         left: 39px;
         top: -19px;
         gap: 33px 20px;
@@ -131,7 +131,7 @@
         padding: 20px 20px 40px;
         max-width: 318px;
         width: 100%;
-        height: 1110px;
+        max-height: 1110px;
         top: -87px;
       }
 
@@ -330,7 +330,7 @@
         input[type="checkbox"] {
           margin: 33px 19px 0 0;
           position: relative;
-          top: -9px;
+          top: 7px;
           left: 3px;
           accent-color: $white;
 
@@ -340,6 +340,7 @@
 
           @media screen and (max-width: 375px) {
             margin: 30px 10px 0 0;
+            top: -9px;
           }
         }
 
@@ -445,6 +446,10 @@
       &[type="date"] {
         text-transform: uppercase;
         letter-spacing: -0.03em;
+      }
+
+      &[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
       }
     }
   }
