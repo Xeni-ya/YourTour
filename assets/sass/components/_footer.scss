@@ -4,7 +4,7 @@
 
 .footer {
   background: $beige-200;
-  margin-top: 135px;
+  margin-top: 137px;
 
   @media screen and (max-width: 768px) {
     margin-top: 57px;
@@ -39,12 +39,7 @@
 
     .footer__text {
       color: $gray-300;
-      @include offset;
-      top: 2px;
-
-      @media screen and (max-width: 1024px) {
-        top: 0;
-      }
+      @include offset-navbar-link-8px;
 
       @media screen and (max-width: 768px) {
         top: 22px;
@@ -52,8 +47,8 @@
     }
 
     .nav-social {
-      position: relative;
-      left: 6px;
+      @include offset;
+      bottom: 2px;
 
       @media screen and (max-width: 358px) {
         left: 0;
