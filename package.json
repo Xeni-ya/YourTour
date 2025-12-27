@@ -8,9 +8,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
-    "dev": "webpack",
-    "build": "webpack"
+    "start": "set NODE_ENV=development&&webpack serve --open",
+    "dev": "set NODE_ENV=development&&webpack",
+    "build": "set NODE_ENV=production&&webpack"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "@eslint/js": "^9.39.1",
     "autoprefixer": "^10.4.23",
     "babel-loader": "^10.0.0",
+    "cross-env": "^10.1.0",
     "css-loader": "^7.1.2",
     "eslint": "^9.39.1",
     "globals": "^16.5.0",
