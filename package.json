@@ -7,7 +7,10 @@
   "description": "Необходимо сверстать главную страницу сайта на основе предоставленного макета в Figma. Задание направлено на отработку навыков верстки **без использования JavaScript**.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "dev": "webpack",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -40,5 +43,6 @@
     "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
-  }
+  },
+  "type": "commonjs"
 }
