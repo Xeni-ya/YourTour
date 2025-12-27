@@ -14,9 +14,9 @@ window.addEventListener('scroll', () => {
     // меняется логотип
     if (logoBlack) {
       if (window.scrollY > 450) {
-        logoBlack.setAttribute('xlink:href', './src/assets/icons/sprite.svg#logo-black');
+        logoBlack.setAttribute('xlink:href', './src/icons/sprite.svg#logo-black');
       } else {
-        logoBlack.setAttribute('xlink:href', './src/assets/icons/sprite.svg#logo-white');
+        logoBlack.setAttribute('xlink:href', './src/icons/sprite.svg#logo-white');
       }
     }
 
