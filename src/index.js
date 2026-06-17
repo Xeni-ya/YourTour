@@ -1,4 +1,4 @@
-import './styles.css';
+import './assets/sass/app.scss';
 
 // ================== Фиксированное меню ==================== //
 
